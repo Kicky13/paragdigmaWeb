@@ -63,9 +63,9 @@ class cogs_upload extends CI_Controller
                             'OPCO' => $opco,
                             'ITEM' => $jenis[$i],
                             'PERIOD' => $this->dateConvert($period[$j]),
-                            'RKAP' => $angka[0][$indexRKAP],
-                            'REALISASI' => $angka[0][$indexReal],
-                            'REALISASI_TAHUN_LALU' => $angka[0][$indexTL]
+                            'RKAP' => str_replace(' ', '', $angka[0][$indexRKAP]),
+                            'REALISASI' => str_replace(' ', '', $angka[0][$indexReal]),
+                            'REALISASI_TAHUN_LALU' => str_replace(' ', '', angka[0][$indexTL])
                         );
                         array_push($inserted, $temp);
                         $indexRKAP = $indexRKAP + 3;
