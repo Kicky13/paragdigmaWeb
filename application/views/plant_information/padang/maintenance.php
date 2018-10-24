@@ -1,0 +1,53 @@
+<style>
+    .blink_me {
+        animation: blinker 1s linear infinite;
+    }
+    @keyframes blinker {  
+        50% { opacity: 0; }
+    }
+</style>
+<div class="row">
+    <nav class="navbar navbar-default panelup">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header ">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!--      <a class="navbar-brand" href="#">Real Time Plant Overview</a>-->
+                <h3 style="text-align: left; padding-left: 12px; margin-top: 10px;">Maintenance Plant</h3>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+
+                <ul class="nav navbar-nav navbar-right">
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:#fff ">Padang<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li class="active"><a href="<?= base_url() ?>index.php/plant_padang/maintenance">Padang</a></li>
+                            <li role="separator" class="divider"></li>
+
+                            <li><a href="<?= base_url() ?>index.php/plant_gresik/maintenance">Gresik</a></li>
+                            <li role="separator" class="divider"></li>
+
+                            <li><a href="<?= base_url() ?>index.php/plant_tonasa/maintenance">Tonasa</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="<?= base_url() ?>index.php/plant_tlcc/maintenance">TLCC</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+</div>
+<!--        batas-->
+<div class="row">
+    <h1 style="padding-left: 20px;">Padang Plant Maintenance Page</h1>
+    <h1 class="blink_me" style="padding-left: 20px; color: red; font-weight: bold;">Under Construction</h1>
+</div>

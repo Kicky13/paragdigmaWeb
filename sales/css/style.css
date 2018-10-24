@@ -1,0 +1,313 @@
+/*=========================== RESET START =========================*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    margin: 0;
+    padding: 0
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block
+}
+body {
+    line-height: 1
+}
+ol,
+ul {
+    list-style: none
+}
+blockquote,
+q {
+    quotes: none
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: none
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+body {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    line-height: 18px;
+    margin: 0;
+    padding: 0;
+    background: #f3f3f3;
+    font-size: 13px;
+    font-family: 'Open Sans', sans-serif;
+    color: #737373;
+    word-wrap: break-word;
+    overflow-x: hidden;
+}
+:focus {
+    outline: 0;
+}
+ins {
+    text-decoration: none;
+}
+del {
+    text-decoration: line-through;
+}
+a,
+a:visited,
+a:hover {
+    text-decoration: none;
+}
+.clear_fix {
+    clear: both;
+    display: block;
+    height: auto;
+    text-indent: -999em;
+    line-height: 0;
+    font-size: 0;
+}
+.add_fix:after {
+    display: block;
+    content: "";
+    clear: both;
+}
+.padding-left{padding:0 0 0 15px;}
+.nopadding {
+    padding: 0;
+}
+.nomargin {
+    margin: 0;
+}
+/*============================ END RESET ===========================*/
+
+.wrapall {} .clearfix {
+    display: block;
+    height: 0px;
+}
+.centering {
+    max-width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+.more {
+    background: #fe4608 url(images/ic-more.png) center right no-repeat;
+    padding: 10px 30px 10px 10px;
+    color: #fff;
+    font-size: 12px;
+    position: relative;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.more:hover {
+    background-color: #e53a00;
+    color: #fff;
+}
+
+body{overflow:hidden;background:#f5f5f5;opacity: 1;-webkit-transition: all 0.3s ease; -moz-transition: all 0.3s ease; -o-transition: all 0.3s ease; transition: all 0.3s ease;}
+body.changepage{opacity: 0}
+
+.control {
+    position:absolute;
+    top:5px;
+    right:0px;
+    width: 50px;
+    font-size: 0;
+    white-space: nowrap;
+    text-align: center;
+    cursor: pointer;
+}
+.control,
+.control .left,
+.control .right,
+.control:before {
+  display: inline-block;
+  vertical-align: middle;
+  transition: border 0.4s, width 0.4s, height 0.4s, margin 0.4s;
+  transition-tiomig-function: cubic-bezier(1, 0, 0, 1);
+}
+.control:before {
+  content: "";
+  height: 50px;
+}
+.control.pause .left,
+.control.pause .right {
+  margin: 0;
+  border-left: 5px solid #af1016;
+  border-top: 0 solid transparent;
+  border-bottom: 0 solid transparent;
+  height: 15px;
+}
+.control.pause .left {
+  border-right: 10px solid transparent;
+}
+.control.pause .right {
+  margin-left:-5px;
+}
+.control.play .left {
+  margin-left: 0px;
+  border-left: 10px solid #af1016;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 0px solid transparent;
+  height: 15px;
+}
+.control.play .right {
+  margin-left: -10px;
+  border-left: 10px solid #af1016;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  height: 0px;
+}
+.control:hover {
+  border-color: #fff;
+}
+.control:hover .left,
+.control:hover .right {
+  border-left-color: #fff;
+}
+
+#header{position:fixed;top:0;left:0;z-index:3;width:100%; height:64px;background:#fff;-webkit-box-shadow: 0px 1px 6px -1px rgba(0,0,0,0.36); -moz-box-shadow: 0px 1px 6px -1px rgba(0,0,0,0.36); box-shadow: 0px 1px 6px -1px rgba(0,0,0,0.36);overflow: hidden;}
+#header .loading{height:4px;background:#af1016;position:absolute;bottom:0;left:80px;right:0;}
+#header .logo{width:80px;float:left;padding:5px 0;text-align: center;position:relative;}
+#header .logo img{height:50px;}
+#header .page_title{position: absolute;top:0;left:80px;right:0;background:#ed2d34;bottom:0;color:#fff;}
+#header .page_title h1{padding-left:20px;font-size:20px;height:60px;line-height:60px;}
+#header .page_title .time{position:absolute;right:55px;top:0;height:60px;line-height:60px;}
+#header .logo::after, #header .page_title::after{position:absolute;bottom:0;left:0;right:0;height:4px;content:"";background:#e6e6e6;}
+#header .page_title::after{background:#d81f25;}
+
+#content{padding-top:64px;}
+.highlight{font-size:12px;background:#fff;padding:10px;margin-top:15px;border-radius:5px;-webkit-box-shadow: 0px 1px 6px -1px rgba(0,0,0,0.36); -moz-box-shadow: 0px 1px 6px -1px rgba(0,0,0,0.36); box-shadow: 0px 1px 6px -1px rgba(0,0,0,0.36);}
+.highlight .percent{border-bottom:1px solid #dcdcdc;margin-bottom:10px;padding:30px 0 10px 0;}
+.highlight .percent font{font-size:50px;}
+.highlight .percent .fa{font-size:30px;position:relative;top:-10px;margin-left:5px;}
+
+.opco-title{margin:20px 0 5px 0;position:relative;}
+.opco-title a{float:right;margin-right:-15px;font-size:12px;color:#ed2d34;}
+.opco-title img{width:25px;position:absolute;left:15px;top:-5px;}
+.opco-title span{display:block;padding-left:30px;}
+.highlight.peropco{padding:5px 0 0 10px;margin:10px 0 15px 0;}
+.highlight.peropco .percent{border:0;margin:0;padding:30px 0 10px 0;}
+.highlight.peropco .percent font{font-size:30px;}
+.highlight.peropco .percent .fa{font-size:10px;top:-10px;}
+
+.cover_table{border-radius:5px;-webkit-box-shadow: 0px 1px 6px -1px rgba(0,0,0,0.36); -moz-box-shadow: 0px 1px 6px -1px rgba(0,0,0,0.36); box-shadow: 0px 1px 6px -1px rgba(0,0,0,0.36);}
+.table-striped {margin-bottom:10px;}
+.table-striped thead td{background:#ed2d34;color:#fff;}
+.table-striped td{font-size:12px;padding:6px 8px !important;}
+
+.chart{height:200px;margin-top:10px;padding:10px;}
+.highcharts-legend-item tspan{font-size:8px;}
+
+#footer{text-align: center;width: 100%;position:fixed;bottom:10px;left:0;padding:0 15px;font-size:12px;opacity:.5;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

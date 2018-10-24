@@ -1,0 +1,32 @@
+{
+    "data": [
+        {
+            "id": "1",
+            "name": "Tiger Nixon",
+            "position": "System Architect",
+            "salary": "$320,800",
+            "start_date": "2011\/04\/25",
+            "office": "Edinburgh",
+            "extn": "5421",
+            "extn2": "5421",
+            "extn3": "5421",
+            "extn4": "5421",
+            "extn5": "5421",
+            "extn6": "5421"
+        },
+        {
+            "id": "1",
+            "name": "Tiger Nixon",
+            "position": "System Architect",
+            "salary": "$320,800",
+            "start_date": "2011\/04\/25",
+            "office": "Edinburgh",
+            "extn": "5421",
+            "extn2": "5421",
+            "extn3": "5421",
+            "extn4": "5421",
+            "extn5": "5421",
+            "extn6": "5421"
+        }
+    ]
+}

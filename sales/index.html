@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"  />
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+	<meta name="description" content="This Description for Site">
+	
+	<title>BOD Dashboard</title>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<link href="css/font-awesome.min.css" rel="stylesheet" />
+	<link href="css/style.css" rel="stylesheet" />
+</head>
+<body class="add_fix">
+<header id="header">
+	<div class="centering add_fix">
+		<div class="logo">
+			<img src="images/logo.png">
+		</div>
+		<div class="page_title">
+			<h1>Sales Revenue</h1>
+			<div class="time">
+				10 November 2017, 8:36 AM
+			</div>
+			<div class="control play">
+			  	<span class="left"></span><span class="right"></span>
+			</div>
+		</div>
+	</div>
+	<div class="loading"></div>
+</header><!--/#header -->
+<section id="content">	
+	<div class="centering add_fix">
+		<div class="col-md-9 nopadding" style="background:#fff;padding-bottom:10px;">
+			<div class="col-md-12 nopadding" style="padding-right:15px;">
+				<div class="col-md-4 padding-left">
+	                <div class="col-xs-12 highlight">
+	                    <div class="col-xs-12 nopadding">
+	                        To day
+	                    </div>
+	                    <div class="percent" align="center">
+	                        <span><font color="red">0</font><i class="fa fa-sort-desc" aria-hidden="true" style="color: red;"></i></span>
+	                    </div>
+	                    <div class="col-xs-4" align="center">
+	                        <span>Target</span><br>
+	                        <span>0</span>
+	                    </div>
+	                    <div class="col-xs-4 noPadding" align="center">
+	                        <span>Actual</span><br>
+	                        <span>0</span>
+	                    </div>
+	                    <div class="col-xs-4 noPadding" align="center">
+	                        <span>Varian</span><br>
+	                        <span>0</span>
+	                    </div>
+	                </div>
+	                <div class="col-xs-12 nopadding">
+		                <div id="dailyChart" class="chart"></div>
+					</div>
+				</div>
+				<div class="col-md-4 padding-left">
+	                <div class="col-xs-12 highlight">
+	                    <div class="col-xs-12 nopadding">
+	                        Month to day
+	                    </div>
+	                    <div class="percent" align="center">
+	                        <span><font color="red">0</font><i class="fa fa-sort-desc" aria-hidden="true" style="color: red;"></i></span>
+	                    </div>
+	                    <div class="col-xs-4" align="center">
+	                        <span>Target</span><br>
+	                        <span>0</span>
+	                    </div>
+	                    <div class="col-xs-4 noPadding" align="center">
+	                        <span>Actual</span><br>
+	                        <span>0</span>
+	                    </div>
+	                    <div class="col-xs-4 noPadding" align="center">
+	                        <span>Varian</span><br>
+	                        <span>0</span>
+	                    </div>
+	                </div>
+	                <div class="col-xs-12 nopadding">
+		                <div id="monthUpToChart" class="chart"></div>
+					</div>
+				</div>
+				<div class="col-md-4 padding-left">
+	                <div class="col-xs-12 highlight">
+	                    <div class="col-xs-12 nopadding">
+	                        Year to day
+	                    </div>
+	                    <div class="percent" align="center">
+	                        <span><font color="red">0</font><i class="fa fa-sort-desc" aria-hidden="true" style="color: red;"></i></span>
+	                    </div>
+	                    <div class="col-xs-4" align="center">
+	                        <span>Target</span><br>
+	                        <span>0</span>
+	                    </div>
+	                    <div class="col-xs-4 noPadding" align="center">
+	                        <span>Actual</span><br>
+	                        <span>0</span>
+	                    </div>
+	                    <div class="col-xs-4 noPadding" align="center">
+	                        <span>Varian</span><br>
+	                        <span>0</span>
+	                    </div>
+	                </div>
+	                <div class="col-xs-12 nopadding">
+		                <div id="yearUpToChart" class="chart"></div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-12 nopadding">
+				<div class="col-md-6" style="padding-right:7.5px;">
+					<div class="col-md-12 cover_table">
+						<h1 style="margin:10px 0 10px 0;">Revenew (Month to day)</h1>
+		                <table class="table table-striped">
+		                    <thead>
+			                    <tr>
+			                        <td><strong>Propinsi</strong></td>
+			                        <td align="center" valign="middle"><strong>Target</strong></td>
+			                        <td align="center" valign="middle"><strong>Actual</strong></td>
+			                        <td align="center" valign="middle"><strong>%</strong></td>
+			                    </tr>
+		                    </thead>
+		                    <tbody>
+			                    <tr>
+			                        <td>Jawa Timur</td>
+			                        <td align="center">123.432</td>
+			                        <td align="center">123.432</td>
+			                        <td align="center">100%</td>
+			                    </tr>
+			                    <tr>
+			                        <td>Jawa Timur</td>
+			                        <td align="center">123.432</td>
+			                        <td align="center">123.432</td>
+			                        <td align="center">100%</td>
+			                    </tr>
+			                    <tr>
+			                        <td>Jawa Timur</td>
+			                        <td align="center">123.432</td>
+			                        <td align="center">123.432</td>
+			                        <td align="center">100%</td>
+			                    </tr>
+			                    <tr>
+			                        <td>Jawa Timur</td>
+			                        <td align="center">123.432</td>
+			                        <td align="center">123.432</td>
+			                        <td align="center">100%</td>
+			                    </tr>
+			                    <tr>
+			                        <td>Jawa Timur</td>
+			                        <td align="center">123.432</td>
+			                        <td align="center">123.432</td>
+			                        <td align="center">100%</td>
+			                    </tr>
+			                    <tr>
+			                        <td>Jawa Timur</td>
+			                        <td align="center">123.432</td>
+			                        <td align="center">123.432</td>
+			                        <td align="center">100%</td>
+			                    </tr>
+			                    <tr>
+			                        <td>Jawa Timur</td>
+			                        <td align="center">123.432</td>
+			                        <td align="center">123.432</td>
+			                        <td align="center">100%</td>
+			                    </tr>
+			                    <tr>
+			                        <td>Jawa Timur</td>
+			                        <td align="center">123.432</td>
+			                        <td align="center">123.432</td>
+			                        <td align="center">100%</td>
+			                    </tr>
+			                    <tr>
+			                        <td>Jawa Timur</td>
+			                        <td align="center">123.432</td>
+			                        <td align="center">123.432</td>
+			                        <td align="center">100%</td>
+			                    </tr>
+			                    <tr>
+			                        <td>Jawa Timur</td>
+			                        <td align="center">123.432</td>
+			                        <td align="center">123.432</td>
+			                        <td align="center">100%</td>
+			                    </tr>
+		                    </tbody>
+		                </table>
+					</div>
+				</div>
+				<div class="col-md-6" style="padding-left:7.5px;">
+					<div class="col-md-12 cover_table">
+						<h1 style="margin:10px 0 10px 0;">Price (Month to day)</h1>
+		                <table class="table table-striped">
+		                    <thead>
+			                    <tr>
+			                        <td><strong>Propinsi</strong></td>
+			                        <td align="center" valign="middle"><strong>Target</strong></td>
+			                        <td align="center" valign="middle"><strong>Actual</strong></td>
+			                        <td align="center" valign="middle"><strong>%</strong></td>
+			                    </tr>
+		                    </thead>
+		                    <tbody>
+			                    <tr>
+			                        <td>Jawa Timur</td>
+			                        <td align="center">123.432</td>
+			                        <td align="center">123.432</td>
+			                        <td align="center">100%</td>
+			                    </tr>
+			                    <tr>
+			                        <td>Jawa Timur</td>
+			                        <td align="center">123.432</td>
+			                        <td align="center">123.432</td>
+			                        <td align="center">100%</td>
+			                    </tr>
+			                    <tr>
+			                        <td>Jawa Timur</td>
+			                        <td align="center">123.432</td>
+			                        <td align="center">123.432</td>
+			                        <td align="center">100%</td>
+			                    </tr>
+			                    <tr>
+			                        <td>Jawa Timur</td>
+			                        <td align="center">123.432</td>
+			                        <td align="center">123.432</td>
+			                        <td align="center">100%</td>
+			                    </tr>
+			                    <tr>
+			                        <td>Jawa Timur</td>
+			                        <td align="center">123.432</td>
+			                        <td align="center">123.432</td>
+			                        <td align="center">100%</td>
+			                    </tr>
+			                    <tr>
+			                        <td>Jawa Timur</td>
+			                        <td align="center">123.432</td>
+			                        <td align="center">123.432</td>
+			                        <td align="center">100%</td>
+			                    </tr>
+			                    <tr>
+			                        <td>Jawa Timur</td>
+			                        <td align="center">123.432</td>
+			                        <td align="center">123.432</td>
+			                        <td align="center">100%</td>
+			                    </tr>
+			                    <tr>
+			                        <td>Jawa Timur</td>
+			                        <td align="center">123.432</td>
+			                        <td align="center">123.432</td>
+			                        <td align="center">100%</td>
+			                    </tr>
+			                    <tr>
+			                        <td>Jawa Timur</td>
+			                        <td align="center">123.432</td>
+			                        <td align="center">123.432</td>
+			                        <td align="center">100%</td>
+			                    </tr>
+			                    <tr>
+			                        <td>Jawa Timur</td>
+			                        <td align="center">123.432</td>
+			                        <td align="center">123.432</td>
+			                        <td align="center">100%</td>
+			                    </tr>
+		                    </tbody>
+		                </table>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3 nopadding">
+			<div class="col-xs-12" style="padding-left:0;border-bottom:1px solid #fff;">
+				<div class="col-xs-12 opco-title">
+                    <h1><img src="images/icKota0.png"><span> KSO - Semen Gresik <a href="#">Detail</a></span></h1>
+                </div>
+				<div class="col-xs-4 padding-left">
+					<div class="col-xs-12 highlight peropco padding-left">
+		                <div class="col-xs-12 nopadding">
+		                    To day
+		                </div>
+		                <div class="percent" align="center">
+		                    <span><font color="red">0</font><i class="fa fa-sort-desc" aria-hidden="true" style="color: red;"></i></span>
+		                </div>
+		            </div>
+	            </div>
+				<div class="col-xs-4 padding-left">
+					<div class="col-xs-12 highlight peropco padding-left">
+		                <div class="col-xs-12 nopadding">
+		                    Month to day
+		                </div>
+		                <div class="percent" align="center">
+		                    <span><font color="red">0</font><i class="fa fa-sort-desc" aria-hidden="true" style="color: red;"></i></span>
+		                </div>
+		            </div>
+	            </div>
+				<div class="col-xs-4 padding-left">
+					<div class="col-xs-12 highlight peropco padding-left">
+		                <div class="col-xs-12 nopadding">
+		                    Year to day
+		                </div>
+		                <div class="percent" align="center">
+		                    <span><font color="red">0</font><i class="fa fa-sort-desc" aria-hidden="true" style="color: red;"></i></span>
+		                </div>
+		            </div>
+	            </div>
+            </div>
+            <div class="col-xs-12" style="padding-left:0;border-bottom:1px solid #fff;">
+				<div class="col-xs-12 opco-title">
+                    <h1><img src="images/icKota1.png"><span> Semen Gresik - Rembang<a href="#">Detail</a></span></h1>
+                </div>
+				<div class="col-xs-4 padding-left">
+					<div class="col-xs-12 highlight peropco padding-left">
+		                <div class="col-xs-12 nopadding">
+		                    To day
+		                </div>
+		                <div class="percent" align="center">
+		                    <span><font color="red">0</font><i class="fa fa-sort-desc" aria-hidden="true" style="color: red;"></i></span>
+		                </div>
+		            </div>
+	            </div>
+				<div class="col-xs-4 padding-left">
+					<div class="col-xs-12 highlight peropco padding-left">
+		                <div class="col-xs-12 nopadding">
+		                    Month to day
+		                </div>
+		                <div class="percent" align="center">
+		                    <span><font color="red">0</font><i class="fa fa-sort-desc" aria-hidden="true" style="color: red;"></i></span>
+		                </div>
+		            </div>
+	            </div>
+				<div class="col-xs-4 padding-left">
+					<div class="col-xs-12 highlight peropco padding-left">
+		                <div class="col-xs-12 nopadding">
+		                    Year to day
+		                </div>
+		                <div class="percent" align="center">
+		                    <span><font color="red">0</font><i class="fa fa-sort-desc" aria-hidden="true" style="color: red;"></i></span>
+		                </div>
+		            </div>
+	            </div>
+            </div><div class="col-xs-12" style="padding-left:0;border-bottom:1px solid #fff;">
+				<div class="col-xs-12 opco-title">
+                    <h1><img src="images/icKota2.png"><span> Semen Padang<a href="#">Detail</a></span></h1>
+                </div>
+				<div class="col-xs-4 padding-left">
+					<div class="col-xs-12 highlight peropco padding-left">
+		                <div class="col-xs-12 nopadding">
+		                    To day
+		                </div>
+		                <div class="percent" align="center">
+		                    <span><font color="red">0</font><i class="fa fa-sort-desc" aria-hidden="true" style="color: red;"></i></span>
+		                </div>
+		            </div>
+	            </div>
+				<div class="col-xs-4 padding-left">
+					<div class="col-xs-12 highlight peropco padding-left">
+		                <div class="col-xs-12 nopadding">
+		                    Month to day
+		                </div>
+		                <div class="percent" align="center">
+		                    <span><font color="red">0</font><i class="fa fa-sort-desc" aria-hidden="true" style="color: red;"></i></span>
+		                </div>
+		            </div>
+	            </div>
+				<div class="col-xs-4 padding-left">
+					<div class="col-xs-12 highlight peropco padding-left">
+		                <div class="col-xs-12 nopadding">
+		                    Year to day
+		                </div>
+		                <div class="percent" align="center">
+		                    <span><font color="red">0</font><i class="fa fa-sort-desc" aria-hidden="true" style="color: red;"></i></span>
+		                </div>
+		            </div>
+	            </div>
+            </div><div class="col-xs-12" style="padding-left:0;border-bottom:1px solid #fff;">
+				<div class="col-xs-12 opco-title">
+                    <h1><img src="images/icKota3.png"><span> Semen Tonasa<a href="#">Detail</a></span></h1>
+                </div>
+				<div class="col-xs-4 padding-left">
+					<div class="col-xs-12 highlight peropco padding-left">
+		                <div class="col-xs-12 nopadding">
+		                    To day
+		                </div>
+		                <div class="percent" align="center">
+		                    <span><font color="red">0</font><i class="fa fa-sort-desc" aria-hidden="true" style="color: red;"></i></span>
+		                </div>
+		            </div>
+	            </div>
+				<div class="col-xs-4 padding-left">
+					<div class="col-xs-12 highlight peropco padding-left">
+		                <div class="col-xs-12 nopadding">
+		                    Month to day
+		                </div>
+		                <div class="percent" align="center">
+		                    <span><font color="red">0</font><i class="fa fa-sort-desc" aria-hidden="true" style="color: red;"></i></span>
+		                </div>
+		            </div>
+	            </div>
+				<div class="col-xs-4 padding-left">
+					<div class="col-xs-12 highlight peropco padding-left">
+		                <div class="col-xs-12 nopadding">
+		                    Year to day
+		                </div>
+		                <div class="percent" align="center">
+		                    <span><font color="red">0</font><i class="fa fa-sort-desc" aria-hidden="true" style="color: red;"></i></span>
+		                </div>
+		            </div>
+	            </div>
+            </div><div class="col-xs-12" style="padding-left:0;">
+				<div class="col-xs-12 opco-title">
+                    <h1><img src="images/icKota4.png"><span> TLCC<a href="#">Detail</a></span></h1>
+                </div>
+				<div class="col-xs-4 padding-left">
+					<div class="col-xs-12 highlight peropco padding-left">
+		                <div class="col-xs-12 nopadding">
+		                    To day
+		                </div>
+		                <div class="percent" align="center">
+		                    <span><font color="red">0</font><i class="fa fa-sort-desc" aria-hidden="true" style="color: red;"></i></span>
+		                </div>
+		            </div>
+	            </div>
+				<div class="col-xs-4 padding-left">
+					<div class="col-xs-12 highlight peropco padding-left">
+		                <div class="col-xs-12 nopadding">
+		                    Month to day
+		                </div>
+		                <div class="percent" align="center">
+		                    <span><font color="red">0</font><i class="fa fa-sort-desc" aria-hidden="true" style="color: red;"></i></span>
+		                </div>
+		            </div>
+	            </div>
+				<div class="col-xs-4 padding-left">
+					<div class="col-xs-12 highlight peropco padding-left">
+		                <div class="col-xs-12 nopadding">
+		                    Year to day
+		                </div>
+		                <div class="percent" align="center">
+		                    <span><font color="red">0</font><i class="fa fa-sort-desc" aria-hidden="true" style="color: red;"></i></span>
+		                </div>
+		            </div>
+	            </div>
+            </div>
+		</div>
+	</div>
+</section><!--/#content -->
+<footer id="footer">
+	<div class="centering add_fix" align="right">
+		Last Update : 10/11/2017 08:19
+	</div>
+</footer><!--/#footer -->
+</body>
+<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="js/modernizr-2.7.1.custom.js"></script>
+<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://code.highcharts.com/highcharts.js"></script>
+<script type="text/javascript" src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="js/basic.js"></script>
+<script src="js/index.js"></script>
+<script>
+$(document).ready(function(){
+
+ });
+</script>
+</html>

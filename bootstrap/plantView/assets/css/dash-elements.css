@@ -1,0 +1,246 @@
+/* 
+    Document   : dash-elements
+    Created on : Sep 9, 2016, 9:38:48 AM
+    Author     : muhammadalireza
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+.date{
+font-family:"Segoe UI";
+font-size:13px;
+}
+.headmenu{
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+    padding: 4px;
+    line-height: 1.42857143;
+    background-color: #615859;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    color: #ffffff;
+
+}
+.headside{
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+    padding: 4px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-bottom: 2px #c63b36 solid;
+    border-radius: 4px;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+.headfive{
+    display: inline-block;
+    max-width: 100%;
+    height: 100px;
+    padding: 4px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-bottom: 2px #c63b36 solid;
+    border-radius: 4px;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+.headsix {
+    display: inline-block;
+    max-width: 100%;
+    height: 83px;
+    padding: 4px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-bottom: 2px #c63b36 solid;
+    border-radius: 4px;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+.h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;}
+.headerimage{
+    background-image:url(../img/head-nw.png);
+}
+.optim-padang{
+    height: 99px;
+}
+.optim-padang-cmn{
+    height: 82px;
+}
+.smig-menu{
+    height: 32px;
+    background-color: #d9534f;
+    border-radius: 5px 5px 5px 5px;
+-moz-border-radius: 5px 5px 5px 5px;
+-webkit-border-radius: 5px 5px 5px 5px;
+border: 0px solid #000000;
+padding-bottom: 3px;
+color: #ffffff;
+}
+.no-padd{
+    padding: 4px;
+}
+.plant-head{
+    background-color: #fff;
+    height: 90px;
+    border-radius: 5px 5px 5px 5px;
+-moz-border-radius: 5px 5px 5px 5px;
+-webkit-border-radius: 5px 5px 5px 5px;
+border: 0px solid #000000;
+  vertical-align: middle;
+  text-align: center;
+line-height: 28px;
+
+}
+.body {
+    background-image:    url(media/bg-two.png);
+    background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;              /* optional, center the image */
+}
+.img-up{
+    width: 41px;
+    padding-top: 20px;
+}
+.p-plant{
+    font-family: Segoe UI;
+font-size: 26px;
+        color: #615859;
+        float: left;
+        line-height: 38px;
+
+}
+.p-numb{
+     font-family: Segoe UI;
+    font-size: 47px;
+    color: #b2b2b2;
+    float: right;
+
+}
+.content-plant{
+    background-color: #e6e6e6;
+    height: 85px;
+}
+#headred{
+    padding: 8px 15px;
+    position: relative;
+    width: 100%;
+    margin: 0;
+    background-color: #ef5350;
+    border-bottom: 0px solid #dee5e7;
+    z-index: 1;
+    box-shadow: 0 4px 6px -5px #222;
+}
+.panelup {
+                        margin-bottom: 10px;
+                        background-color: #e3000e;
+                        border: 1px solid;
+                        border-color: #E0E4CC;
+                        border-radius: 4px;
+                        -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+                                box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+                                    color: white;
+                                    font-family: "Segoe UI";
+
+                }
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+    color: #fff; 
+    background-color: #d83d3a;
+}
+@media (max-width: 767px){
+    .navbar-nav .open .dropdown-menu {
+    position: static;
+    float: none;
+    width: auto;
+    margin-top: 0;
+    background-color: #f5f5f5;
+    border: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+}
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 100px;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    font-size: 14px;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: 4px;
+    -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+}
+.padding-orange-all{
+    border: 3px solid #ffa83c;
+}
+.padding-orange{
+    border-left: 3px solid #ffa83c;
+}
+.padding-green{
+    border-left: 3px solid #53d0c0;
+}
+.padding-blue{
+    border-left: 3px solid #62a9f9;
+}
+.padding-red{
+    border-left: 3px solid #f76767;
+}
+.padding-orange-bottom{
+    border-bottom: 3px solid #ffa83c;
+}
+.padding-orange-top{
+    border-top: 3px solid #ffa83c;
+}
+.padding-orange-right{
+    border-right: 3px solid #ffa83c;
+}
+.padding-green-bottom{
+    border-bottom: 3px solid #53d0c0;
+}
+.padding-blue-bottom{
+    border-bottom: 3px solid #62a9f9;
+}
+.padding-red-bottom{
+    border-bottom: 3px solid #f76767;
+}
+.pattern{
+    background-image:    url(media/pattern.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: left bottom;
+}
+.one-padding{
+        padding-bottom: 1px;
+    padding-top: 1px;
+}
+.zero-padding{
+        padding-bottom: 0px;
+    padding-top: 0px;
+}

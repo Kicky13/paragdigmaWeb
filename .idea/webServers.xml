@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="93796706-37df-47cf-9a30-26ed8b8108b5" name="dashboardBOD" url="http://10.15.5.150">
+        <fileTransfer host="10.15.5.150" port="22" rootFolder="/opt/lampp/htdocs/dev/DashboardBOD" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
