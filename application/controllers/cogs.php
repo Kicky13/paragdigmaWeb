@@ -9,6 +9,7 @@ class cogs extends CI_Controller {
         parent::__construct();
         $this->auth->GetSesionLogin();
         $this->load->library('Template');
+        $this->load->model('m_cogs');
     }
 	
     function trend()
@@ -18,5 +19,4 @@ class cogs extends CI_Controller {
         $load['opco'] = $opco;
 		$this->template->load('plant_information/administrator_index', 'plant_information/cogs/trend', $load); 
     }
-    
 }

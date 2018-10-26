@@ -16,7 +16,6 @@ class cogs_upload extends CI_Controller
 
     public function index()
     {
-        // print_r(1);exit;
         $this->load->view('plant_information/upload/cogs_upload');
     }
 
@@ -24,7 +23,6 @@ class cogs_upload extends CI_Controller
     {
         define('SITE_ROOT', realpath(dirname(__FILE__)));
         $this->path_upload = SITE_ROOT . '/upload/' . basename($_FILES['file']['name']);
-        // print_r($_SERVER['DOCUMENT_ROOT']);exit;
         error_reporting(E_ALL ^ E_NOTICE);
         $file = $_FILES['file']['tmp_name'];
         if (move_uploaded_file($file, $this->path_upload)) {
@@ -65,7 +63,7 @@ class cogs_upload extends CI_Controller
                             'PERIOD' => $this->dateConvert($period[$j]),
                             'RKAP' => str_replace(' ', '', $angka[0][$indexRKAP]),
                             'REALISASI' => str_replace(' ', '', $angka[0][$indexReal]),
-                            'REALISASI_TAHUN_LALU' => str_replace(' ', '', angka[0][$indexTL])
+                            'REALISASI_TAHUN_LALU' => str_replace(' ', '', $angka[0][$indexTL])
                         );
                         array_push($inserted, $temp);
                         $indexRKAP = $indexRKAP + 3;
@@ -187,13 +185,8 @@ class cogs_upload extends CI_Controller
             $rowData = $this->checkCOGS($data[$i]['OPCO'], $data[$i]['ITEM'], $data[$i]['PERIOD']);
             if (count($rowData) > 0) {
                 $sql = "UPDATE COGS_UPLOAD SET RKAP = '" . $data[$i]['RKAP'] . "', REALISASI = '" . $data[$i]['REALISASI'] . "', REALISASI_TAHUN_LALU = '" . $data[$i]['REALISASI_TAHUN_LALU'] . "' WHERE OPCO = '" . $data[$i]['OPCO'] . "' AND ITEM = '" . $data[$i]['ITEM'] . "' AND PERIOD = TO_DATE('" . $data[$i]['PERIOD'] . "', 'yyyy-mm-dd')";
-//                $this->db->where('OPCO', $data[$i]['OPCO']);
-//                $this->db->where('ITEM', $data[$i]['ITEM']);
-//                $this->db->where('PERIOD', $data[$i]['PERIOD']);
-//                $this->db->update('COGS_UPLOAD', $data[$i]);
             } else {
                 $sql = "INSERT INTO COGS_UPLOAD VALUES ('" . $data[$i]['OPCO'] . "', '" . $data[$i]['ITEM'] . "', TO_DATE('" . $data[$i]['PERIOD'] . "', 'yyyy-mm-dd'), '" . $data[$i]['RKAP'] . "', '" . $data[$i]['REALISASI'] . "', '" . $data[$i]['REALISASI_TAHUN_LALU'] . "')";
-//                $this->db->insert('COGS_UPLOAD', $data[$i]);
             }
             $this->db->query($sql);
         }
@@ -203,12 +196,10 @@ class cogs_upload extends CI_Controller
 
     function checkCOGS($opco, $item, $period)
     {
-//        $sql = "SELECT * FROM COGS_UPLOAD WHERE OPCO = '". $opco ."' AND ITEM = '". $item ."' AND PERIOD = TO_DATE('". $period ."','yyyy-mm-dd')";
         $this->db->from('COGS_UPLOAD');
         $this->db->where("OPCO", $opco);
         $this->db->where("ITEM", $item);
         $this->db->where("PERIOD = TO_DATE('" . $period . "','yyyy-mm-dd')");
-//        $this->db->query($sql);
         $query = $this->db->get();
         $rowData = $query->result_array();
         return $rowData;

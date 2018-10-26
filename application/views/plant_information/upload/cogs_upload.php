@@ -77,17 +77,17 @@
                 return $(this).form('validate');
             },
             success: function(result){
-                var result = eval('('+result+')');
+                var callback = eval('('+result+')');
                 if(result.status){
-                    console.log(result.msg);
+                    console.log(result.data);
                     $("#ButtonCogsUpload").html('<i class="fa fa-save"></i>&nbspUpload');
-                    alertify.alert('Info',result.msg);
+                    alertify.alert('Info',callback.msg);
                     document.getElementById("ButtonCogsUpload").disabled = false;
                 } else {
                     console.log(result.data);
                     $("#ButtonCogsUpload").html('<i class="fa fa-save"></i>&nbspUpload');
                     alertify.set('notifier','position', 'top-right');
-                    alertify.error(result.msg);
+                    alertify.error(callback.msg);
                     document.getElementById("ButtonCogsUpload").disabled = false;
                 }
             },

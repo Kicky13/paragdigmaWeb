@@ -7,12 +7,6 @@
 					<span class="tittle_head" id="tittle_head">COGS</span>
 				</div>
 				<div class="col-md-7 nopadding col-xs-12 finddata" align="center">
-					<!-- Type
-						<select id="opco" class="opco highlight_option chooseType">
-							<option value="1" selected>Cement</option>
-							<option value="2">Non Cement</option>
-						</select>
-						&nbsp;&nbsp; -->
 					Company
 						<select id="opco" class="opco highlight_option">
 							<option class="cement" value="1000">SMIG</option>
@@ -22,22 +16,6 @@
 							<option class="cement" value="4000">Semen Tonasa</option>
 							<option class="cement" value="6000">Thang Long</option>
 						</select>
-						&nbsp;&nbsp;
-					<!-- Month
-						<select id="month" class="month highlight_option">
-							<option value="1">January</option>
-							<option value="2">February</option>
-							<option value="3">March</option>
-							<option value="4">April</option>
-							<option value="5">May</option>
-							<option value="6">June</option>
-							<option value="7">July</option>
-							<option value="8">August</option>
-							<option value="9">September</option>
-							<option value="10">Oktober</option>
-							<option value="11">November</option>
-							<option value="12">Desember</option>
-						</select>&nbsp;&nbsp; -->
 					Year
 						<select id="year" class="year highlight_option">
 							<option value="2014">2014</option>
@@ -51,55 +29,37 @@
 					</a>
 				</div>
 				<div class="col-md-3 nopadding col-xs-12 choosedata" align="right" style="padding-top: 10px">
-					<!-- <div class="col-xs-6 nopadding" align="center">
-						<a class="highlight_option total active" rel="1" style="display: inline-block; margin-top: 8px; width: 80px;">
-							<span>Total</span>
-						</a>
-						<a class="highlight_option total" rel="2" style="display: inline-block; margin-top: 8px; width: 80px;">
-							<span>Per Ton</span>
-						</a>
-					</div>
-					<div class="col-xs-6 nopadding" align="center">
-						<a class="highlight_option total" rel="3" style="display: inline-block; margin-top: 8px; width: 80px;">
-							<span>Month</span>
-						</a>
-						<a class="highlight_option total" rel="4" style="display: inline-block; margin-top: 8px; width: 80px;">
-							<span>Year</span>
-						</a>
-					</div> -->
-					
-					<!-- <input class="highlight_option total" rel="1" type="checkbox" data-toggle="toggle" data-on="Per Ton" data-onstyle="info" data-off="Total" data-offstyle="info">&nbsp;&nbsp;
-					<input class="highlight_option total" rel="3" type="checkbox" data-toggle="toggle" data-on="Year To Date" data-onstyle="info" data-off="Month To Date" data-offstyle="info" data-width="140" > -->
 				</div>
 			</div>
-			<!-- <div class="col-xs-12 nopadding chartsmig">
-					<div class="chart" id="incomesmig" style="min-height: 250px; width: 100%"></div>
-			</div> -->
 			<div class="col-md-12 nopadding col-xs-12" align="center" style="padding-top:10px; height: 90px">
                     <div class="head-menu">
                         <!--start menu production -->
                         <ul>
-                            <li id="1"><a class="active">COGS</a></li>
-                            <li id="2"><a href="cogs/trend">BAHAN BAKAR</a></li>
-                            <li id="3"><a href="cogs/trend">BATUBARA</a></li>
-                            <li id="4"><a href="cogs/trend">IDO</a></li>
-                            <li id="5"><a href="cogs/trend">BAHAN BAKU</a></li>
-                            <li id="6"><a href="cogs/trend">BATU KAPUR</a></li>
-                            <li id="7"><a href="cogs/trend">GYPSUM</a></li>
-                            <li id="8"><a href="cogs/trend">TANAH LIAT</a></li>
-                            <li id="9"><a href="cogs/trend">LISTRIK</a></li>
-                            <li id="10"><a href="cogs/trend">LISTRIK PLN</a></li>
-                            <li id="11"><a href="cogs/trend">BTG</a></li>
-                            <li id="12"><a href="cogs/trend">PEMELIHARAAN</a></li>
-                            <li id="13"><a href="cogs/trend">KEMASAN</a></li>
-                            <li id="14"><a href="cogs/trend">KRAFT</a></li>
-                            <li id="15"><a href="cogs/trend">WOVEN</a></li>
-                            <li id="16"><a href="cogs/trend">PENIAGAAN VIA LAUT</a></li>
-                            <li id="17"><a href="cogs/trend">PENIAGAAN VIA DARAT</a></li>     
+                            <li><a href="cogs/trend" class="jenisCogs">COGS</a></li>
+                            <li><a href="cogs/trend" class="jenisCogs">BAHAN BAKAR</a></li>
+                            <li><a href="cogs/trend" class="jenisCogs">BATUBARA</a></li>
+                            <li><a href="cogs/trend" class="jenisCogs">INDEKS BATUBARA</a></li>
+                            <li><a href="cogs/trend" class="jenisCogs">IDO</a></li>
+                            <li><a href="cogs/trend" class="jenisCogs">BAHAN BAKU</a></li>
+                            <li><a href="cogs/trend" class="jenisCogs">BATU KAPUR</a></li>
+                            <li><a href="cogs/trend" class="jenisCogs">INDEKS BATU KAPUR</a></li>
+                            <li><a href="cogs/trend" class="jenisCogs">GYPSUM</a></li>
+                            <li><a href="cogs/trend" class="jenisCogs">INDEKS GYPSUM</a></li>
+                            <li><a href="cogs/trend" class="jenisCogs">TANAH LIAT</a></li>
+                            <li><a href="cogs/trend" class="jenisCogs">INDEKS TANAH LIAT</a></li>
+                            <li><a href="cogs/trend" class="jenisCogs">LISTRIK</a></li>
+                            <li><a href="cogs/trend" class="jenisCogs">INDEKS LISTRIK</a></li>
+                            <li><a href="cogs/trend" class="jenisCogs">LISTRIK PLN</a></li>
+                            <li><a href="cogs/trend" class="jenisCogs">BTG</a></li>
+                            <li><a href="cogs/trend" class="jenisCogs">PEMELIHARAAN</a></li>
+                            <li><a href="cogs/trend" class="jenisCogs">KEMASAN</a></li>
+                            <li><a href="cogs/trend" class="jenisCogs">KRAFT</a></li>
+                            <li><a href="cogs/trend" class="jenisCogs">WOVEN</a></li>
+                            <li><a href="cogs/trend" class="jenisCogs">PENIAGAAN VIA LAUT</a></li>
+                            <li><a href="cogs/trend" class="jenisCogs">PENIAGAAN VIA DARAT</a></li>
                         </ul>
                             <!--  end menu production -->
                     </div>
-				
 			</div>
 			<div class="col-md-12 nopadding col-xs-12" style="margin-top: 12px; padding: 0 20px 12px 20px;">
 				<div class="col-md-9 nopadding col-xs-6">
@@ -119,92 +79,10 @@
 					</div>
 				</div>
 			</div>
-
 			<div class="col-md-12 nopadding col-xs-12" style="padding: 0 20px 12px 20px;">
 				<div class="chart" id="cogs1" style="min-height: 300px; width: 100%">
 				</div>
 			</div>
-
-			<!-- <div class="col-md-12 nopadding col-5 scroll-block" style="padding: 10px 15px 12px 10px;">
-				<div class="col-md-2 padding-left col-xs-12">
-	                <div class="col-xs-12 highlight block active nopadding" data-name="Revenue" rel="1" style="padding: 0; overflow: hidden;">
-	                    <div class="inc" style="padding: 12px 10px 10px">
-	                    	<h1 class="bottom_header">Revenue<a href="sales_dashboard/revenue" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i></a></h1>
-	                    	
-	                    </div>
-	                    <div class="col-xs-12 valrkap" align="right">
-	                    	<span class="persen1 bottom_persen">0%</span>
-	                    </div>
-	                    <div class="chart" id="income1" style="height: 100px"></div>
-	                    <div class="col-xs-12 nopadding growth" align="left" style="font-size: 14px; margin-top: 6px">
-	                    	<div class="col-xs-6 nopadding valrkap" align="center" style="padding: 10px">Actual<br><b class="actual1">0</b></div>
-	                    	<div class="col-xs-6 nopadding valrkap" align="center" style="padding: 10px;">RKAP<br><b class="rkap1">0</b></div>
-	                    </div>
-	                    
-	                </div>
-				</div>
-				<div class="col-md-2 padding-left col-xs-12">
-	                <div class="col-xs-12 highlight block" data-name="Cost Of Revenue" rel="2" style="padding: 0; overflow: hidden;">
-	                    <div class="inc" style="padding: 12px 10px 10px">
-	                    	<h1 class="bottom_header">Cost Of Revenue<a href="finance_dashboard/income_statement" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i></a></h1>
-	                    </div>
-	                    <div class="col-xs-12 valrkap" align="right">
-	                    	<span class="persen2 bottom_persen">0%</span>
-	                    </div>
-	                    <div class="chart" id="income2" style="height: 100px"></div>
-	                    <div class="col-xs-12 nopadding growth" align="left" style="font-size: 14px; margin-top: 6px">
-	                    	<div class="col-xs-6 nopadding valrkap" align="center" style="padding: 10px">Actual<br><b class="actual2">0</b></div>
-	                    	<div class="col-xs-6 nopadding valrkap" align="center" style="padding: 10px;">RKAP<br><b class="rkap2">0</b></div>
-	                    </div>
-	                </div>
-				</div>
-				<div class="col-md-2 padding-left col-xs-12">
-	                <div class="col-xs-12 highlight block" data-name="Operation Expense" rel="3" style="padding: 0; overflow: hidden;">
-	                   <div class="inc" style="padding: 12px 10px 10px">
-	                    	<h1 class="bottom_header">Operation Expense<a href="finance_dashboard/operation_expense" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i></a></h1>
-	                    </div>
-	                    <div class="col-xs-12 valrkap" align="right">
-	                    	<span class="persen3 bottom_persen">0%</span>
-	                    </div>
-	                    <div class="chart" id="income3" style="height: 100px"></div>
-	                    <div class="col-xs-12 nopadding growth" align="left" style="font-size: 14px; margin-top: 6px">
-	                    	<div class="col-xs-6 nopadding valrkap" align="center" style="padding: 10px">Actual<br><b class="actual3">0</b></div>
-	                    	<div class="col-xs-6 nopadding valrkap" align="center" style="padding: 10px;">RKAP<br><b class="rkap3">0</b></div>
-	                    </div>
-	                </div>
-				</div>
-				<div class="col-md-2 padding-left col-xs-12">
-	                <div class="col-xs-12 highlight block" data-name="EBITDA" rel="4" style="padding: 0; overflow: hidden;">
-	                    <div class="inc" style="padding: 12px 10px 10px">
-	                    	<h1 class="bottom_header">EBITDA</h1>
-	                    </div>
-	                    <div class="col-xs-12 valrkap" align="right">
-	                    	<span class="persen4 bottom_persen">0%</span>
-	                    </div>
-	                    <div class="chart" id="income4" style="height: 100px"></div>
-	                    <div class="col-xs-12 nopadding growth" align="left" style="font-size: 14px">
-	                    	<div class="col-xs-6 nopadding valrkap" align="center" style="padding: 10px">Actual<br><b class="actual4">0</b></div>
-	                    	<div class="col-xs-6 nopadding valrkap" align="center" style="padding: 10px">RKAP<br><b class="rkap4">0</b></div>
-	                    </div>
-	                </div>
-				</div>
-				<div class="col-md-2 padding-left col-xs-12">
-	                <div class="col-xs-12 highlight block" data-name="Net Profit" rel="5" style="padding: 0; overflow: hidden;">
-	                    <div class="inc" style="padding: 12px 10px 10px">
-	                    	<h1 class="bottom_header">Net Profit</h1>
-	                    </div>
-	                    <div class="col-xs-12 valrkap" align="right">
-	                    	<span class="persen5 bottom_persen">0%</span>
-	                    </div>
-	                    <div class="chart" id="income5" style="height: 100px"></div>
-	                    <div class="col-xs-12 nopadding growth" align="left" style="font-size: 14px">
-	                    	<div class="col-xs-6 nopadding valrkap" align="center" style="padding: 10px">Actual<br><b class="actual5">0</b></div>
-	                    	<div class="col-xs-6 nopadding valrkap"  align="center"  style="padding: 10px">RKAP<br><b class="rkap5">0</b></div>
-	                    	
-	                    </div>
-	                </div>
-				</div>
-			</div> -->
 		</div>
 	</div>
 
@@ -212,80 +90,10 @@
 <style type="text/css">
 	.inc div b{font-size:20px;}
 </style>
-<script>
-	$(function () { 
-    var myChart = Highcharts.chart('cogs1', {
-		    chart: {
-		        type: 'column'
-		    },
-		    title: {
-		        text: 'Trend COGS'
-		    },
-		    subtitle: {
-		        text: ''
-		    },
-		    xAxis: {
-		        categories: [
-		            'Jan',
-		            'Feb',
-		            'Mar',
-		            'Apr',
-		            'May',
-		            'Jun',
-		            'Jul',
-		            'Aug',
-		            'Sep',
-		            'Oct',
-		            'Nov',
-		            'Dec'
-		        ],
-		        crosshair: true
-		    },
-		    yAxis: {
-		        min: 0,
-		        title: {
-		            text: 'Value (in Mio)'
-		        }
-		    },
-		    exporting: {
-		    	enabled: false
-		    },
-		    credits: {
-			    enabled: false
-			}, 
-		    tooltip: {
-		        headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
-		        pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
-		            '<td style="padding:0"><b>{point.y:.1f} mm</b></td></tr>',
-		        footerFormat: '</table>',
-		        shared: true,
-		        useHTML: true
-		    },
-		    plotOptions: {
-		        column: {
-		            pointPadding: 0.2,
-		            borderWidth: 0
-		        }
-		    },
-		    series: [{
-		        name: 'Actual',
-		        data: [49.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4]
-
-		    }, {
-		        name: 'Last Year Actual',
-		        data: [83.6, 78.8, 98.5, 93.4, 106.0, 84.5, 105.0, 104.3, 91.2, 83.5, 106.6, 92.3]
-
-		    }, {
-		        name: 'RKAP',
-		        data: [48.9, 38.8, 39.3, 41.4, 47.0, 48.3, 59.0, 59.6, 52.4, 65.2, 59.3, 51.2]
-
-		    }]
-	    });
-	});
-</script>
 <script type="text/javascript" src="assets/js/modernizr-2.7.1.custom.js"></script>
 <script type="text/javascript" src="https://code.highcharts.com/highcharts.js"></script>
 <script type="text/javascript" src="https://code.highcharts.com/modules/exporting.js"></script>
 <script src="https://code.highcharts.com/modules/bullet.js"></script>
+<script type="text/javascript" src="assets/js/cogs.js"></script>
 
 </script>
