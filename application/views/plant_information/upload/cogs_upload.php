@@ -78,7 +78,7 @@
             },
             success: function(result){
                 var callback = eval('('+result+')');
-                if(result.status){
+                if(callback.status){
                     console.log(result.data);
                     $("#ButtonCogsUpload").html('<i class="fa fa-save"></i>&nbspUpload');
                     alertify.alert('Info',callback.msg);
