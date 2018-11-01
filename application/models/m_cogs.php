@@ -10,12 +10,20 @@ class m_cogs extends CI_Model {
         $this->db = $this->load->database('paradigma', TRUE);
     }
 
-    function dataCOGS($opco, $year)
+    function getActualByMonthYear($opco, $month, $year)
     {
-        $sql = "SELECT ITEM FROM COGS_UPLOAD
-                WHERE OPCO = '2000'
-                AND (PERIOD >= TO_DATE('1.1.' || 2014, 'DD.MM.YYYY') AND PERIOD < TO_DATE('1.1.' || (2014 + 1), 'DD.MM.YYYY'))";
-        $this->db->query($sql);
+        $date = $year . '-' . $month;
+        $sql = "SELECT * FROM COGS_UPLOAD WHERE OPCO = '". $opco ."' AND PERIOD = TO_DATE('". $date ."', 'yyyy-mm') ORDER BY ID";
+//        $this->db->from("COGS_UPLOAD");
+//        $this->db->where("OPCO", $opco);
+//        $this->db->where("PERIOD = TO_DATE('".$date."', 'yyyy-mm')");
+//        $this->db->order_by("ID");
+        $query = $this->db->query($sql);
+        return (array)$query->result_array();
+    }
 
+    function test()
+    {
+        return 'test';
     }
 }

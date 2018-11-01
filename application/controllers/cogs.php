@@ -19,4 +19,17 @@ class cogs extends CI_Controller {
         $load['opco'] = $opco;
 		$this->template->load('plant_information/administrator_index', 'plant_information/cogs/trend', $load); 
     }
+
+    function loadAllByItemYear()
+    {
+//        $data = $this->m_cogs->getAllByItemYear();
+//        echo json_encode(array('item' => $data));
+    }
+
+    function loadActualByMonthYear()
+    {
+        $x = $this->m_cogs->test();
+        $data = $this->m_cogs->getActualByMonthYear($this->input->post('opco'), $this->input->post('month'), $this->input->post('year'));
+        echo json_encode(array('data' => $data, 'testData' => $x));
+    }
 }

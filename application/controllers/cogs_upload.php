@@ -186,7 +186,7 @@ class cogs_upload extends CI_Controller
             if (count($rowData) > 0) {
                 $sql = "UPDATE COGS_UPLOAD SET RKAP = '" . $data[$i]['RKAP'] . "', REALISASI = '" . $data[$i]['REALISASI'] . "', REALISASI_TAHUN_LALU = '" . $data[$i]['REALISASI_TAHUN_LALU'] . "' WHERE OPCO = '" . $data[$i]['OPCO'] . "' AND ITEM = '" . $data[$i]['ITEM'] . "' AND PERIOD = TO_DATE('" . $data[$i]['PERIOD'] . "', 'yyyy-mm-dd')";
             } else {
-                $sql = "INSERT INTO COGS_UPLOAD VALUES ('" . $data[$i]['OPCO'] . "', '" . $data[$i]['ITEM'] . "', TO_DATE('" . $data[$i]['PERIOD'] . "', 'yyyy-mm-dd'), '" . $data[$i]['RKAP'] . "', '" . $data[$i]['REALISASI'] . "', '" . $data[$i]['REALISASI_TAHUN_LALU'] . "')";
+                $sql = "INSERT INTO COGS_UPLOAD (OPCO, ITEM, PERIOD, RKAP, REALISASI, REALISASI_TAHUN_LALU) VALUES ('" . $data[$i]['OPCO'] . "', '" . $data[$i]['ITEM'] . "', TO_DATE('" . $data[$i]['PERIOD'] . "', 'yyyy-mm-dd'), '" . $data[$i]['RKAP'] . "', '" . $data[$i]['REALISASI'] . "', '" . $data[$i]['REALISASI_TAHUN_LALU'] . "')";
             }
             $this->db->query($sql);
         }

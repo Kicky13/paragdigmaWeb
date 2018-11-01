@@ -6,6 +6,7 @@
 				<div class="col-md-2 nopadding col-xs-12">
 					<span class="tittle_head" id="tittle_head">COGS</span>
 				</div>
+                <input type="hidden" value="<?php echo base_url(); ?>" id="baseUrl">
 				<div class="col-md-7 nopadding col-xs-12 finddata" align="center">
 					Company
 						<select id="opco" class="opco highlight_option">
@@ -502,8 +503,8 @@
 			                    <div class="col-xs-12 highlight active" style="margin: 10px 0px 10px 0px;"><span><a href="javascript:changeItem(18, 'KEMASAN')" id="cogs18">KEMASAN</a></div>
 			                    <div class="col-xs-12 highlight active" style="margin: 10px 0px 10px 0px;"><span><a href="javascript:changeItem(19, 'KRAFT')" id="cogs19">KRAFT</a></div>
 			                    <div class="col-xs-12 highlight active" style="margin: 10px 0px 10px 0px;"><span><a href="javascript:changeItem(20, 'WOVEN')" id="cogs20">WOVEN</a></div>
-			                    <div class="col-xs-12 highlight active" style="margin: 10px 0px 10px 0px;"><span><a href="javascript:changeItem(21, 'PENIAGAAN VIA DARAT')" id="cogs21">PENIAGAAN VIA DARAT</a></div>
-			                    <div class="col-xs-12 highlight active" style="margin: 10px 0px 10px 0px;"><span><a href="javascript:changeItem(22, 'PENIAGAAN VIA LAUT')" id="cogs22">PENIAGAAN VIA LAUT</a></div>
+			                    <div class="col-xs-12 highlight active" style="margin: 10px 0px 10px 0px;"><span><a href="javascript:changeItem(21, 'PENIAGAAN VIA LAUT')" id="cogs21">PENIAGAAN VIA LAUT</a></div>
+			                    <div class="col-xs-12 highlight active" style="margin: 10px 0px 10px 0px;"><span><a href="javascript:changeItem(22, 'PENIAGAAN VIA DARAT')" id="cogs22">PENIAGAAN VIA DARAT</a></div>
 			                </div>
 			            </div>
 
