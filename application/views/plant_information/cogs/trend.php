@@ -40,7 +40,7 @@
 							<option value="2017">2017</option>
 							<option value="2018">2018</option>
 						</select>&nbsp;&nbsp;&nbsp;
-					<a class="highlight_option find" style="display: inline-block; margin-top: 8px; width: 60px;">
+					<a href="javascript:find()" class="highlight_option find" style="display: inline-block; margin-top: 8px; width: 60px;">
 						<span>Find</span>
 					</a>
 				</div>

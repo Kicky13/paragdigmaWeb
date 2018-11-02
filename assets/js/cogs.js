@@ -4,20 +4,6 @@ $(document).ready(function () {
     console.log('Start Page');
     loadChartPerData();
     loadChartAll();
-
-    $('#opco').change(function () {
-        console.log('Opco Ganti ' + $(this).val());
-        loadChartAll();
-    });
-
-    $('#month').change(function () {
-        console.log('Month Ganti ' + $(this).val());
-        loadChartAll();
-    });
-    $('#year').change(function () {
-        console.log('Year Ganti ' + $(this).val());
-        loadChartAll();
-    });
 });
 
 function loadChartPerData() {
@@ -1550,8 +1536,26 @@ function loadChartAll() {
         },
         type: 'POST',
         dataType: 'JSON'
-    }).done(function (data) {
-        console.log(data.data[0]);
+    }).always(function (data) {
+        var cogs = [];
+        if (typeof(data.data[0]) == 'undefined'){
+            console.log('Ini Kosong');
+            for (h = 1; h < 23; h++){
+                cogs[h] = 0;
+            } 
+        } else {
+            ind = 1;
+            for (i = 0; i < data.data.length; i++){
+                if (parseFloat(data.data[i].REALISASI) === null) {
+                    cogs[ind] = 0;
+                } else {
+                    cogs[ind] = parseFloat(data.data[i].REALISASI);
+                }
+                ind++;
+            }
+            console.log(cogs);
+            console.log(data.data);
+        }
         Highcharts.chart('cogs_all', {
             chart: {
                 type: 'column'
@@ -1604,7 +1608,7 @@ function loadChartAll() {
             tooltip: {
                 headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
                 pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
-                    '<td style="padding:0"><b>{point.y:.1f} mm</b></td></tr>',
+                    '<td style="padding:0"><b>{point.y:.1f}</b></td></tr>',
                 footerFormat: '</table>',
                 shared: true,
                 useHTML: true
@@ -1617,8 +1621,7 @@ function loadChartAll() {
             },
             series: [{
                 name: 'Nilai Actual',
-                data: [49.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4]
-
+                data: [cogs[1], cogs[2], cogs[3], cogs[4], cogs[5], cogs[6], cogs[7], cogs[8], cogs[9], cogs[10], cogs[11], cogs[12], cogs[13], cogs[14], cogs[15], cogs[16], cogs[17], cogs[18], cogs[19], cogs[20], cogs[21], cogs[22]]
             }]
         });
     });
@@ -1636,4 +1639,9 @@ function changeItem(item, title) {
         ex.setAttribute('hidden', true);
     });
     document.getElementById(headerID).removeAttribute('hidden');
+}
+
+function find() {
+    console.log('Find');
+    loadChartAll();
 }

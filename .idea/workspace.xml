@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b25838e5-215a-4244-8956-1b74fa9bc6f0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/cogs.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/cogs.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/controllers/cogs_upload.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/cogs_upload.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/models/m_cogs.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/models/m_cogs.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/views/plant_information/cogs/trend.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/plant_information/cogs/trend.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/js/cogs.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/cogs.js" afterDir="false" />
     </list>
@@ -54,7 +52,7 @@
     <session id="-1266200674">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="22" />
+          <entry key="project.closed" value="23" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.22" value="1" />
           <entry key="project.open.time.23" value="1" />
@@ -64,26 +62,27 @@
           <entry key="project.open.time.30" value="4" />
           <entry key="project.open.time.31" value="1" />
           <entry key="project.open.time.32" value="2" />
+          <entry key="project.open.time.33" value="1" />
           <entry key="project.open.time.35" value="2" />
           <entry key="project.open.time.37" value="1" />
           <entry key="project.open.time.43" value="2" />
           <entry key="project.open.time.44" value="1" />
           <entry key="project.open.time.51" value="2" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="24" />
+          <entry key="project.opened" value="25" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="js" value="1490" />
-          <entry key="php" value="8435" />
+          <entry key="js" value="2240" />
+          <entry key="php" value="8522" />
           <entry key="txt" value="25" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JavaScript" value="1490" />
-          <entry key="PHP" value="8419" />
+          <entry key="JavaScript" value="2240" />
+          <entry key="PHP" value="8506" />
           <entry key="PLAIN_TEXT" value="25" />
           <entry key="SQL" value="16" />
         </counts>
@@ -106,11 +105,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/js/cogs.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="434">
-              <caret line="1553" column="32" selection-start-line="1553" selection-start-column="32" selection-end-line="1553" selection-end-column="32" />
+            <state relative-caret-position="92">
+              <caret line="1622" column="37" lean-forward="true" selection-start-line="1622" selection-start-column="37" selection-end-line="1622" selection-end-column="37" />
               <folding>
                 <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#td#0;n#tr#0;n#!!top" expanded="true" />
@@ -190,19 +189,16 @@
         <entry file="file://$PROJECT_DIR$/application/controllers/cogs.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="381">
-              <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+              <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/views/plant_information/cogs/trend.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="64" selection-start-line="16" selection-start-column="64" selection-end-line="16" selection-end-column="64" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="714">
+              <caret line="42" column="48" selection-start-line="42" selection-start-column="48" selection-end-line="42" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -210,8 +206,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/controllers/cogs_upload.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="251">
-              <caret line="190" column="31" lean-forward="true" selection-start-line="190" selection-start-column="31" selection-end-line="190" selection-end-column="31" />
+            <state relative-caret-position="519">
+              <caret line="69" column="52" lean-forward="true" selection-start-line="69" selection-start-column="52" selection-end-line="69" selection-end-column="52" />
             </state>
           </provider>
         </entry>
@@ -253,11 +249,11 @@
         <option value="D:/ENTERTAINING/HOBBIES/CODING/Coba/screens/HomeScreen.js" />
         <option value="$PROJECT_DIR$/application/controllers/.gitignore" />
         <option value="$PROJECT_DIR$/application/views/plant_information/upload/cogs_upload.php" />
-        <option value="$PROJECT_DIR$/application/controllers/cogs_upload.php" />
-        <option value="$PROJECT_DIR$/application/views/plant_information/cogs/trend.php" />
         <option value="$PROJECT_DIR$/application/controllers/cogs.php" />
         <option value="$PROJECT_DIR$/application/models/m_cogs.php" />
+        <option value="$PROJECT_DIR$/application/controllers/cogs_upload.php" />
         <option value="$PROJECT_DIR$/assets/js/cogs.js" />
+        <option value="$PROJECT_DIR$/application/views/plant_information/cogs/trend.php" />
       </list>
     </option>
   </component>
@@ -414,7 +410,8 @@
       <workItem from="1540956678432" duration="598000" />
       <workItem from="1540963178675" duration="602000" />
       <workItem from="1541032352689" duration="13454000" />
-      <workItem from="1541054611568" duration="7946000" />
+      <workItem from="1541054611568" duration="10126000" />
+      <workItem from="1541119308859" duration="4130000" />
     </task>
     <task id="LOCAL-00001" summary="Penambahan COGS Upload">
       <created>1540356513024</created>
@@ -427,13 +424,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="150416000" />
+    <option name="totallyTimeSpent" value="156726000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.40468988" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.4107413" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -585,20 +582,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="22" column="16" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -609,30 +592,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/plant_information/cogs/trend.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="64" selection-start-line="16" selection-start-column="64" selection-end-line="16" selection-end-column="64" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/cogs_upload.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="190" column="31" lean-forward="true" selection-start-line="190" selection-start-column="31" selection-end-line="190" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/cogs.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="381">
-          <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/models/m_cogs.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -640,10 +599,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/cogs.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="381">
+          <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/cogs_upload.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="519">
+          <caret line="69" column="52" lean-forward="true" selection-start-line="69" selection-start-column="52" selection-end-line="69" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/cogs.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="434">
-          <caret line="1553" column="32" selection-start-line="1553" selection-start-column="32" selection-end-line="1553" selection-end-column="32" />
+        <state relative-caret-position="92">
+          <caret line="1622" column="37" lean-forward="true" selection-start-line="1622" selection-start-column="37" selection-end-line="1622" selection-end-column="37" />
           <folding>
             <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#td#0;n#tr#0;n#!!top" expanded="true" />
@@ -715,6 +688,13 @@
             <element signature="n#style#0;n#td#0;n#tr#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#td#1;n#tr#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/plant_information/cogs/trend.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="42" column="48" selection-start-line="42" selection-start-column="48" selection-end-line="42" selection-end-column="48" />
         </state>
       </provider>
     </entry>
