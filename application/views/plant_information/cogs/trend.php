@@ -40,7 +40,7 @@
 							<option value="2017">2017</option>
 							<option value="2018">2018</option>
 						</select>&nbsp;&nbsp;&nbsp;
-					<a href="javascript:find()" class="highlight_option find" style="display: inline-block; margin-top: 8px; width: 60px;">
+					<a id="find" class="highlight_option find" style="display: inline-block; margin-top: 8px; width: 60px;">
 						<span>Find</span>
 					</a>
 				</div>
@@ -53,307 +53,308 @@
 					<div class="col-md-12 nopadding col-xs-12" style="margin-top: 12px; padding: 0 20px 12px 20px;">
 						<div class="col-md-6 nopadding col-xs-6">
 							<span class="cogs_title" id="cogs_title" style="font-size: 24px; font-weight: 600; color: #083d7c">COGS</span>
+                            <input type="hidden" id="cogs_hidden_title" value="">
 						</div>
 						<div class="col-md-6 nopadding col-xs-6 itemHeader" id="itemHeader1">
 							<div class="col-xs-3 nopadding" align="center" style="padding-right: 8px;">
 								<span style="font-size: 14px; font-weight: 400; color: #083d7c">Actual</span><br>
-								<span id="itemActual1" style="font-size: 16px; font-weight: 600; color: #083d7c"> 1</span>
+								<span id="itemActual1" class="itemActual" style="font-size: 16px; font-weight: 600; color: #083d7c"> 1</span>
 							</div>
 							<div class="col-xs-3 nopadding" align="center" style="padding-right: 8px;">
 								<span style="font-size: 14px; font-weight: 400; color: #083d7c">RKAP</span><br>
-								<span id="itemRKAP1" style="font-size: 16px; font-weight: 600; color: #083d7c"> 1</span>
+								<span id="itemRKAP1" class="itemRKAP" style="font-size: 16px; font-weight: 600; color: #083d7c"> 1</span>
 							</div>
 							<div class="col-xs-3 nopadding" align="center" style="padding-right: 8px;">
 								<span style="font-size: 14px; font-weight: 400; color: #083d7c">Growth MoM</span><br>
-								<span id="itemMoM1" style="font-size: 16px; font-weight: 600; color: #083d7c"> 1</span>
+								<span id="itemMoM1" class="itemMoM" style="font-size: 16px; font-weight: 600; color: #083d7c"> 1</span>
 							</div>
 							<div class="col-xs-3 nopadding" align="center" style="padding-right: 8px;">
 								<span style="font-size: 14px; font-weight: 400; color: #083d7c">Growth YoY</span><br>
-								<span id="itemYoY1" style="font-size: 16px; font-weight: 600; color: #083d7c"> 1</span>
+								<span id="itemYoY1" class="itemYoY" style="font-size: 16px; font-weight: 600; color: #083d7c"> 1</span>
 							</div>
 						</div>
                         <div class="col-md-6 nopadding col-xs-6 itemHeader" id="itemHeader2">
                             <div class="col-xs-3 nopadding" align="center" style="padding-right: 8px;">
                                 <span style="font-size: 14px; font-weight: 400; color: #083d7c">Actual</span><br>
-                                <span id="itemActual2" style="font-size: 16px; font-weight: 600; color: #083d7c"> 2</span>
+                                <span id="itemActual2"  class="itemActual" style="font-size: 16px; font-weight: 600; color: #083d7c"> 2</span>
                             </div>
                             <div class="col-xs-3 nopadding" align="center" style="padding-right: 8px;">
                                 <span style="font-size: 14px; font-weight: 400; color: #083d7c">RKAP</span><br>
-                                <span id="itemRKAP2" style="font-size: 16px; font-weight: 600; color: #083d7c"> 2</span>
+                                <span id="itemRKAP2" class="itemRKAP" style="font-size: 16px; font-weight: 600; color: #083d7c"> 2</span>
                             </div>
                             <div class="col-xs-3 nopadding" align="center" style="padding-right: 8px;">
                                 <span style="font-size: 14px; font-weight: 400; color: #083d7c">Growth MoM</span><br>
-                                <span id="itemMoM2" style="font-size: 16px; font-weight: 600; color: #083d7c"> 2</span>
+                                <span id="itemMoM2" class="itemMoM" style="font-size: 16px; font-weight: 600; color: #083d7c"> 2</span>
                             </div>
                             <div class="col-xs-3 nopadding" align="center" style="padding-right: 8px;">
                                 <span style="font-size: 14px; font-weight: 400; color: #083d7c">Growth YoY</span><br>
-                                <span id="itemYoY2" style="font-size: 16px; font-weight: 600; color: #083d7c"> 2</span>
+                                <span id="itemYoY2" class="itemYoY" style="font-size: 16px; font-weight: 600; color: #083d7c"> 2</span>
                             </div>
                         </div>
                         <div class="col-md-6 nopadding col-xs-6 itemHeader" id="itemHeader3">
                             <div class="col-xs-3 nopadding" align="center" style="padding-right: 8px;">
                                 <span style="font-size: 14px; font-weight: 400; color: #083d7c">Actual</span><br>
-                                <span id="itemActual3" style="font-size: 16px; font-weight: 600; color: #083d7c"> 3</span>
+                                <span id="itemActual3"  class="itemActual" style="font-size: 16px; font-weight: 600; color: #083d7c"> 3</span>
                             </div>
                             <div class="col-xs-3 nopadding" align="center" style="padding-right: 8px;">
                                 <span style="font-size: 14px; font-weight: 400; color: #083d7c">RKAP</span><br>
-                                <span id="itemRKAP3" style="font-size: 16px; font-weight: 600; color: #083d7c"> 3</span>
+                                <span id="itemRKAP3" class="itemRKAP" style="font-size: 16px; font-weight: 600; color: #083d7c"> 3</span>
                             </div>
                             <div class="col-xs-3 nopadding" align="center" style="padding-right: 8px;">
                                 <span style="font-size: 14px; font-weight: 400; color: #083d7c">Growth MoM</span><br>
-                                <span id="itemMoM3" style="font-size: 16px; font-weight: 600; color: #083d7c"> 3</span>
+                                <span id="itemMoM3" class="itemMoM" style="font-size: 16px; font-weight: 600; color: #083d7c"> 3</span>
                             </div>
                             <div class="col-xs-3 nopadding" align="center" style="padding-right: 8px;">
                                 <span style="font-size: 14px; font-weight: 400; color: #083d7c">Growth YoY</span><br>
-                                <span id="itemYoY3" style="font-size: 16px; font-weight: 600; color: #083d7c"> 3</span>
+                                <span id="itemYoY3" class="itemYoY" style="font-size: 16px; font-weight: 600; color: #083d7c"> 3</span>
                             </div>
                         </div>
                         <div class="col-md-6 nopadding col-xs-6 itemHeader" id="itemHeader4">
                             <div class="col-xs-3 nopadding" align="center" style="padding-right: 8px;">
                                 <span style="font-size: 14px; font-weight: 400; color: #083d7c">Actual</span><br>
-                                <span id="itemActual4" style="font-size: 16px; font-weight: 600; color: #083d7c"> 4</span>
+                                <span id="itemActual4" class="itemActual" style="font-size: 16px; font-weight: 600; color: #083d7c"> 4</span>
                             </div>
                             <div class="col-xs-3 nopadding" align="center" style="padding-right: 8px;">
                                 <span style="font-size: 14px; font-weight: 400; color: #083d7c">RKAP</span><br>
-                                <span id="itemRKAP4" style="font-size: 16px; font-weight: 600; color: #083d7c"> 4</span>
+                                <span id="itemRKAP4" class="itemRKAP" style="font-size: 16px; font-weight: 600; color: #083d7c"> 4</span>
                             </div>
                             <div class="col-xs-3 nopadding" align="center" style="padding-right: 8px;">
                                 <span style="font-size: 14px; font-weight: 400; color: #083d7c">Growth MoM</span><br>
-                                <span id="itemMoM4" style="font-size: 16px; font-weight: 600; color: #083d7c"> 4</span>
+                                <span id="itemMoM4" class="itemMoM" style="font-size: 16px; font-weight: 600; color: #083d7c"> 4</span>
                             </div>
                             <div class="col-xs-3 nopadding" align="center" style="padding-right: 8px;">
                                 <span style="font-size: 14px; font-weight: 400; color: #083d7c">Growth YoY</span><br>
-                                <span id="itemYoY4" style="font-size: 16px; font-weight: 600; color: #083d7c"> 4</span>
+                                <span id="itemYoY4" class="itemYoY" style="font-size: 16px; font-weight: 600; color: #083d7c"> 4</span>
                             </div>
                         </div>
                         <div class="col-md-6 nopadding col-xs-6 itemHeader" id="itemHeader5">
                             <div class="col-xs-3 nopadding" align="center" style="padding-right: 8px;">
                                 <span style="font-size: 14px; font-weight: 400; color: #083d7c">Actual</span><br>
-                                <span id="itemActual5" style="font-size: 16px; font-weight: 600; color: #083d7c"> 5</span>
+                                <span id="itemActual5" class="itemActual" style="font-size: 16px; font-weight: 600; color: #083d7c"> 5</span>
                             </div>
                             <div class="col-xs-3 nopadding" align="center" style="padding-right: 8px;">
                                 <span style="font-size: 14px; font-weight: 400; color: #083d7c">RKAP</span><br>
-                                <span id="itemRKAP5" style="font-size: 16px; font-weight: 600; color: #083d7c"> 5</span>
+                                <span id="itemRKAP5" class="itemRKAP" style="font-size: 16px; font-weight: 600; color: #083d7c"> 5</span>
                             </div>
                             <div class="col-xs-3 nopadding" align="center" style="padding-right: 8px;">
                                 <span style="font-size: 14px; font-weight: 400; color: #083d7c">Growth MoM</span><br>
-                                <span id="itemMoM5" style="font-size: 16px; font-weight: 600; color: #083d7c"> 5</span>
+                                <span id="itemMoM5" class="itemMoM" style="font-size: 16px; font-weight: 600; color: #083d7c"> 5</span>
                             </div>
                             <div class="col-xs-3 nopadding" align="center" style="padding-right: 8px;">
                                 <span style="font-size: 14px; font-weight: 400; color: #083d7c">Growth YoY</span><br>
-                                <span id="itemYoY5" style="font-size: 16px; font-weight: 600; color: #083d7c"> 5</span>
+                                <span id="itemYoY5" class="itemYoY" style="font-size: 16px; font-weight: 600; color: #083d7c"> 5</span>
                             </div>
                         </div>
                         <div class="col-md-6 nopadding col-xs-6 itemHeader" id="itemHeader6">
                             <div class="col-xs-3 nopadding" align="center" style="padding-right: 8px;">
                                 <span style="font-size: 14px; font-weight: 400; color: #083d7c">Actual</span><br>
-                                <span id="itemActual6" style="font-size: 16px; font-weight: 600; color: #083d7c"> 6</span>
+                                <span id="itemActual6" class="itemActual" style="font-size: 16px; font-weight: 600; color: #083d7c"> 6</span>
                             </div>
                             <div class="col-xs-3 nopadding" align="center" style="padding-right: 8px;">
                                 <span style="font-size: 14px; font-weight: 400; color: #083d7c">RKAP</span><br>
-                                <span id="itemRKAP6" style="font-size: 16px; font-weight: 600; color: #083d7c"> 6</span>
+                                <span id="itemRKAP6" class="itemRKAP" style="font-size: 16px; font-weight: 600; color: #083d7c"> 6</span>
                             </div>
                             <div class="col-xs-3 nopadding" align="center" style="padding-right: 8px;">
                                 <span style="font-size: 14px; font-weight: 400; color: #083d7c">Growth MoM</span><br>
-                                <span id="itemMoM6" style="font-size: 16px; font-weight: 600; color: #083d7c"> 6</span>
+                                <span id="itemMoM6" class="itemMoM" style="font-size: 16px; font-weight: 600; color: #083d7c"> 6</span>
                             </div>
                             <div class="col-xs-3 nopadding" align="center" style="padding-right: 8px;">
                                 <span style="font-size: 14px; font-weight: 400; color: #083d7c">Growth YoY</span><br>
-                                <span id="itemYoY6" style="font-size: 16px; font-weight: 600; color: #083d7c"> 6</span>
+                                <span id="itemYoY6" class="itemYoY" style="font-size: 16px; font-weight: 600; color: #083d7c"> 6</span>
                             </div>
                         </div>
                         <div class="col-md-6 nopadding col-xs-6 itemHeader" id="itemHeader7">
                             <div class="col-xs-3 nopadding" align="center" style="padding-right: 8px;">
                                 <span style="font-size: 14px; font-weight: 400; color: #083d7c">Actual</span><br>
-                                <span id="itemActual7" style="font-size: 16px; font-weight: 600; color: #083d7c"> 7</span>
+                                <span id="itemActual7" class="itemActual" style="font-size: 16px; font-weight: 600; color: #083d7c"> 7</span>
                             </div>
                             <div class="col-xs-3 nopadding" align="center" style="padding-right: 8px;">
                                 <span style="font-size: 14px; font-weight: 400; color: #083d7c">RKAP</span><br>
-                                <span id="itemRKAP7" style="font-size: 16px; font-weight: 600; color: #083d7c"> 7</span>
+                                <span id="itemRKAP7" class="itemRKAP" style="font-size: 16px; font-weight: 600; color: #083d7c"> 7</span>
                             </div>
                             <div class="col-xs-3 nopadding" align="center" style="padding-right: 8px;">
                                 <span style="font-size: 14px; font-weight: 400; color: #083d7c">Growth MoM</span><br>
-                                <span id="itemMoM7" style="font-size: 16px; font-weight: 600; color: #083d7c"> 7</span>
+                                <span id="itemMoM7" class="itemMoM" style="font-size: 16px; font-weight: 600; color: #083d7c"> 7</span>
                             </div>
                             <div class="col-xs-3 nopadding" align="center" style="padding-right: 8px;">
                                 <span style="font-size: 14px; font-weight: 400; color: #083d7c">Growth YoY</span><br>
-                                <span id="itemYoY7" style="font-size: 16px; font-weight: 600; color: #083d7c"> 7</span>
+                                <span id="itemYoY7" class="itemYoY" style="font-size: 16px; font-weight: 600; color: #083d7c"> 7</span>
                             </div>
                         </div>
                         <div class="col-md-6 nopadding col-xs-6 itemHeader" id="itemHeader8">
                             <div class="col-xs-3 nopadding" align="center" style="padding-right: 8px;">
                                 <span style="font-size: 14px; font-weight: 400; color: #083d7c">Actual</span><br>
-                                <span id="itemActual8" style="font-size: 16px; font-weight: 600; color: #083d7c"> 8</span>
+                                <span id="itemActual8" class="itemActual" style="font-size: 16px; font-weight: 600; color: #083d7c"> 8</span>
                             </div>
                             <div class="col-xs-3 nopadding" align="center" style="padding-right: 8px;">
                                 <span style="font-size: 14px; font-weight: 400; color: #083d7c">RKAP</span><br>
-                                <span id="itemRKAP8" style="font-size: 16px; font-weight: 600; color: #083d7c"> 8</span>
+                                <span id="itemRKAP8" class="itemRKAP" style="font-size: 16px; font-weight: 600; color: #083d7c"> 8</span>
                             </div>
                             <div class="col-xs-3 nopadding" align="center" style="padding-right: 8px;">
                                 <span style="font-size: 14px; font-weight: 400; color: #083d7c">Growth MoM</span><br>
-                                <span id="itemMoM8" style="font-size: 16px; font-weight: 600; color: #083d7c"> 8</span>
+                                <span id="itemMoM8" class="itemMoM" style="font-size: 16px; font-weight: 600; color: #083d7c"> 8</span>
                             </div>
                             <div class="col-xs-3 nopadding" align="center" style="padding-right: 8px;">
                                 <span style="font-size: 14px; font-weight: 400; color: #083d7c">Growth YoY</span><br>
-                                <span id="itemYoY8" style="font-size: 16px; font-weight: 600; color: #083d7c"> 8</span>
+                                <span id="itemYoY8" class="itemYoY" style="font-size: 16px; font-weight: 600; color: #083d7c"> 8</span>
                             </div>
                         </div>
                         <div class="col-md-6 nopadding col-xs-6 itemHeader" id="itemHeader9">
                             <div class="col-xs-3 nopadding" align="center" style="padding-right: 8px;">
                                 <span style="font-size: 14px; font-weight: 400; color: #083d7c">Actual</span><br>
-                                <span id="itemActual9" style="font-size: 16px; font-weight: 600; color: #083d7c"> 9</span>
+                                <span id="itemActual9" class="itemActual" style="font-size: 16px; font-weight: 600; color: #083d7c"> 9</span>
                             </div>
                             <div class="col-xs-3 nopadding" align="center" style="padding-right: 8px;">
                                 <span style="font-size: 14px; font-weight: 400; color: #083d7c">RKAP</span><br>
-                                <span id="itemRKAP9" style="font-size: 16px; font-weight: 600; color: #083d7c"> 9</span>
+                                <span id="itemRKAP9" class="itemRKAP" style="font-size: 16px; font-weight: 600; color: #083d7c"> 9</span>
                             </div>
                             <div class="col-xs-3 nopadding" align="center" style="padding-right: 8px;">
                                 <span style="font-size: 14px; font-weight: 400; color: #083d7c">Growth MoM</span><br>
-                                <span id="itemMoM9" style="font-size: 16px; font-weight: 600; color: #083d7c"> 9</span>
+                                <span id="itemMoM9" class="itemMoM" style="font-size: 16px; font-weight: 600; color: #083d7c"> 9</span>
                             </div>
                             <div class="col-xs-3 nopadding" align="center" style="padding-right: 8px;">
                                 <span style="font-size: 14px; font-weight: 400; color: #083d7c">Growth YoY</span><br>
-                                <span id="itemYoY9" style="font-size: 16px; font-weight: 600; color: #083d7c"> 9</span>
+                                <span id="itemYoY9" class="itemYoY" style="font-size: 16px; font-weight: 600; color: #083d7c"> 9</span>
                             </div>
                         </div>
                         <div class="col-md-6 nopadding col-xs-6 itemHeader" id="itemHeader10">
                             <div class="col-xs-3 nopadding" align="center" style="padding-right: 8px;">
                                 <span style="font-size: 14px; font-weight: 400; color: #083d7c">Actual</span><br>
-                                <span id="itemActual10" style="font-size: 16px; font-weight: 600; color: #083d7c"> 10</span>
+                                <span id="itemActual10" class="itemActual" style="font-size: 16px; font-weight: 600; color: #083d7c"> 10</span>
                             </div>
                             <div class="col-xs-3 nopadding" align="center" style="padding-right: 8px;">
                                 <span style="font-size: 14px; font-weight: 400; color: #083d7c">RKAP</span><br>
-                                <span id="itemRKAP10" style="font-size: 16px; font-weight: 600; color: #083d7c"> 10</span>
+                                <span id="itemRKAP10" class="itemRKAP" style="font-size: 16px; font-weight: 600; color: #083d7c"> 10</span>
                             </div>
                             <div class="col-xs-3 nopadding" align="center" style="padding-right: 8px;">
                                 <span style="font-size: 14px; font-weight: 400; color: #083d7c">Growth MoM</span><br>
-                                <span id="itemMoM10" style="font-size: 16px; font-weight: 600; color: #083d7c"> 10</span>
+                                <span id="itemMoM10" class="itemMoM" style="font-size: 16px; font-weight: 600; color: #083d7c"> 10</span>
                             </div>
                             <div class="col-xs-3 nopadding" align="center" style="padding-right: 8px;">
                                 <span style="font-size: 14px; font-weight: 400; color: #083d7c">Growth YoY</span><br>
-                                <span id="itemYoY10" style="font-size: 16px; font-weight: 600; color: #083d7c"> 10</span>
+                                <span id="itemYoY10" class="itemYoY" style="font-size: 16px; font-weight: 600; color: #083d7c"> 10</span>
                             </div>
                         </div>
                         <div class="col-md-6 nopadding col-xs-6 itemHeader" id="itemHeader11">
                             <div class="col-xs-3 nopadding" align="center" style="padding-right: 8px;">
                                 <span style="font-size: 14px; font-weight: 400; color: #083d7c">Actual</span><br>
-                                <span id="itemActual11" style="font-size: 16px; font-weight: 600; color: #083d7c"> 11</span>
+                                <span id="itemActual11" class="itemActual" style="font-size: 16px; font-weight: 600; color: #083d7c"> 11</span>
                             </div>
                             <div class="col-xs-3 nopadding" align="center" style="padding-right: 8px;">
                                 <span style="font-size: 14px; font-weight: 400; color: #083d7c">RKAP</span><br>
-                                <span id="itemRKAP11" style="font-size: 16px; font-weight: 600; color: #083d7c"> 11</span>
+                                <span id="itemRKAP11" class="itemRKAP" style="font-size: 16px; font-weight: 600; color: #083d7c"> 11</span>
                             </div>
                             <div class="col-xs-3 nopadding" align="center" style="padding-right: 8px;">
                                 <span style="font-size: 14px; font-weight: 400; color: #083d7c">Growth MoM</span><br>
-                                <span id="itemMoM11" style="font-size: 16px; font-weight: 600; color: #083d7c"> 11</span>
+                                <span id="itemMoM11" class="itemMoM" style="font-size: 16px; font-weight: 600; color: #083d7c"> 11</span>
                             </div>
                             <div class="col-xs-3 nopadding" align="center" style="padding-right: 8px;">
                                 <span style="font-size: 14px; font-weight: 400; color: #083d7c">Growth YoY</span><br>
-                                <span id="itemYoY11" style="font-size: 16px; font-weight: 600; color: #083d7c"> 11</span>
+                                <span id="itemYoY11" class="itemYoY" style="font-size: 16px; font-weight: 600; color: #083d7c"> 11</span>
                             </div>
                         </div>
                         <div class="col-md-6 nopadding col-xs-6 itemHeader" id="itemHeader12">
                             <div class="col-xs-3 nopadding" align="center" style="padding-right: 8px;">
                                 <span style="font-size: 14px; font-weight: 400; color: #083d7c">Actual</span><br>
-                                <span id="itemActual12" style="font-size: 16px; font-weight: 600; color: #083d7c"> 12</span>
+                                <span id="itemActual12" class="itemActual" style="font-size: 16px; font-weight: 600; color: #083d7c"> 12</span>
                             </div>
                             <div class="col-xs-3 nopadding" align="center" style="padding-right: 8px;">
                                 <span style="font-size: 14px; font-weight: 400; color: #083d7c">RKAP</span><br>
-                                <span id="itemRKAP12" style="font-size: 16px; font-weight: 600; color: #083d7c"> 12</span>
+                                <span id="itemRKAP12" class="itemRKAP" style="font-size: 16px; font-weight: 600; color: #083d7c"> 12</span>
                             </div>
                             <div class="col-xs-3 nopadding" align="center" style="padding-right: 8px;">
                                 <span style="font-size: 14px; font-weight: 400; color: #083d7c">Growth MoM</span><br>
-                                <span id="itemMoM12" style="font-size: 16px; font-weight: 600; color: #083d7c"> 12</span>
+                                <span id="itemMoM12" class="itemMoM" style="font-size: 16px; font-weight: 600; color: #083d7c"> 12</span>
                             </div>
                             <div class="col-xs-3 nopadding" align="center" style="padding-right: 8px;">
                                 <span style="font-size: 14px; font-weight: 400; color: #083d7c">Growth YoY</span><br>
-                                <span id="itemYoY12" style="font-size: 16px; font-weight: 600; color: #083d7c"> 12</span>
+                                <span id="itemYoY12" class="itemYoY" style="font-size: 16px; font-weight: 600; color: #083d7c"> 12</span>
                             </div>
                         </div>
                         <div class="col-md-6 nopadding col-xs-6 itemHeader" id="itemHeader13">
                             <div class="col-xs-3 nopadding" align="center" style="padding-right: 8px;">
                                 <span style="font-size: 14px; font-weight: 400; color: #083d7c">Actual</span><br>
-                                <span id="itemActual13" style="font-size: 16px; font-weight: 600; color: #083d7c"> 13</span>
+                                <span id="itemActual13" class="itemActual" style="font-size: 16px; font-weight: 600; color: #083d7c"> 13</span>
                             </div>
                             <div class="col-xs-3 nopadding" align="center" style="padding-right: 8px;">
                                 <span style="font-size: 14px; font-weight: 400; color: #083d7c">RKAP</span><br>
-                                <span id="itemRKAP13" style="font-size: 16px; font-weight: 600; color: #083d7c"> 13</span>
+                                <span id="itemRKAP13" class="itemRKAP" style="font-size: 16px; font-weight: 600; color: #083d7c"> 13</span>
                             </div>
                             <div class="col-xs-3 nopadding" align="center" style="padding-right: 8px;">
                                 <span style="font-size: 14px; font-weight: 400; color: #083d7c">Growth MoM</span><br>
-                                <span id="itemMoM13" style="font-size: 16px; font-weight: 600; color: #083d7c"> 13</span>
+                                <span id="itemMoM13" class="itemMoM" style="font-size: 16px; font-weight: 600; color: #083d7c"> 13</span>
                             </div>
                             <div class="col-xs-3 nopadding" align="center" style="padding-right: 8px;">
                                 <span style="font-size: 14px; font-weight: 400; color: #083d7c">Growth YoY</span><br>
-                                <span id="itemYoY13" style="font-size: 16px; font-weight: 600; color: #083d7c"> 13</span>
+                                <span id="itemYoY13" class="itemYoY" style="font-size: 16px; font-weight: 600; color: #083d7c"> 13</span>
                             </div>
                         </div>
                         <div class="col-md-6 nopadding col-xs-6 itemHeader" id="itemHeader14">
                             <div class="col-xs-3 nopadding" align="center" style="padding-right: 8px;">
                                 <span style="font-size: 14px; font-weight: 400; color: #083d7c">Actual</span><br>
-                                <span id="itemActual14" style="font-size: 16px; font-weight: 600; color: #083d7c"> 14</span>
+                                <span id="itemActual14" class="itemActual" style="font-size: 16px; font-weight: 600; color: #083d7c"> 14</span>
                             </div>
                             <div class="col-xs-3 nopadding" align="center" style="padding-right: 8px;">
                                 <span style="font-size: 14px; font-weight: 400; color: #083d7c">RKAP</span><br>
-                                <span id="itemRKAP14" style="font-size: 16px; font-weight: 600; color: #083d7c"> 14</span>
+                                <span id="itemRKAP14" class="itemRKAP" style="font-size: 16px; font-weight: 600; color: #083d7c"> 14</span>
                             </div>
                             <div class="col-xs-3 nopadding" align="center" style="padding-right: 8px;">
                                 <span style="font-size: 14px; font-weight: 400; color: #083d7c">Growth MoM</span><br>
-                                <span id="itemMoM14" style="font-size: 16px; font-weight: 600; color: #083d7c"> 14</span>
+                                <span id="itemMoM14" class="itemMoM" style="font-size: 16px; font-weight: 600; color: #083d7c"> 14</span>
                             </div>
                             <div class="col-xs-3 nopadding" align="center" style="padding-right: 8px;">
                                 <span style="font-size: 14px; font-weight: 400; color: #083d7c">Growth YoY</span><br>
-                                <span id="itemYoY14" style="font-size: 16px; font-weight: 600; color: #083d7c"> 14</span>
+                                <span id="itemYoY14" class="itemYoY" style="font-size: 16px; font-weight: 600; color: #083d7c"> 14</span>
                             </div>
                         </div>
                         <div class="col-md-6 nopadding col-xs-6 itemHeader" id="itemHeader15">
                             <div class="col-xs-3 nopadding" align="center" style="padding-right: 8px;">
                                 <span style="font-size: 14px; font-weight: 400; color: #083d7c">Actual</span><br>
-                                <span id="itemActual15" style="font-size: 16px; font-weight: 600; color: #083d7c"> 15</span>
+                                <span id="itemActual15" class="itemActual" style="font-size: 16px; font-weight: 600; color: #083d7c"> 15</span>
                             </div>
                             <div class="col-xs-3 nopadding" align="center" style="padding-right: 8px;">
                                 <span style="font-size: 14px; font-weight: 400; color: #083d7c">RKAP</span><br>
-                                <span id="itemRKAP15" style="font-size: 16px; font-weight: 600; color: #083d7c"> 15</span>
+                                <span id="itemRKAP15" class="itemRKAP" style="font-size: 16px; font-weight: 600; color: #083d7c"> 15</span>
                             </div>
                             <div class="col-xs-3 nopadding" align="center" style="padding-right: 8px;">
                                 <span style="font-size: 14px; font-weight: 400; color: #083d7c">Growth MoM</span><br>
-                                <span id="itemMoM15" style="font-size: 16px; font-weight: 600; color: #083d7c"> 15</span>
+                                <span id="itemMoM15" class="itemMoM" style="font-size: 16px; font-weight: 600; color: #083d7c"> 15</span>
                             </div>
                             <div class="col-xs-3 nopadding" align="center" style="padding-right: 8px;">
                                 <span style="font-size: 14px; font-weight: 400; color: #083d7c">Growth YoY</span><br>
-                                <span id="itemYoY15" style="font-size: 16px; font-weight: 600; color: #083d7c"> 15</span>
+                                <span id="itemYoY15" class="itemYoY" style="font-size: 16px; font-weight: 600; color: #083d7c"> 15</span>
                             </div>
                         </div>
                         <div class="col-md-6 nopadding col-xs-6 itemHeader" id="itemHeader16">
                             <div class="col-xs-3 nopadding" align="center" style="padding-right: 8px;">
                                 <span style="font-size: 14px; font-weight: 400; color: #083d7c">Actual</span><br>
-                                <span id="itemActual16" style="font-size: 16px; font-weight: 600; color: #083d7c"> 16</span>
+                                <span id="itemActual16" class="itemActual" style="font-size: 16px; font-weight: 600; color: #083d7c"> 16</span>
                             </div>
                             <div class="col-xs-3 nopadding" align="center" style="padding-right: 8px;">
                                 <span style="font-size: 14px; font-weight: 400; color: #083d7c">RKAP</span><br>
-                                <span id="itemRKAP16" style="font-size: 16px; font-weight: 600; color: #083d7c"> 16</span>
+                                <span id="itemRKAP16" class="itemRKAP" style="font-size: 16px; font-weight: 600; color: #083d7c"> 16</span>
                             </div>
                             <div class="col-xs-3 nopadding" align="center" style="padding-right: 8px;">
                                 <span style="font-size: 14px; font-weight: 400; color: #083d7c">Growth MoM</span><br>
-                                <span id="itemMoM16" style="font-size: 16px; font-weight: 600; color: #083d7c"> 16</span>
+                                <span id="itemMoM16" class="itemMoM" style="font-size: 16px; font-weight: 600; color: #083d7c"> 16</span>
                             </div>
                             <div class="col-xs-3 nopadding" align="center" style="padding-right: 8px;">
                                 <span style="font-size: 14px; font-weight: 400; color: #083d7c">Growth YoY</span><br>
-                                <span id="itemYoY16" style="font-size: 16px; font-weight: 600; color: #083d7c"> 16</span>
+                                <span id="itemYoY16" class="itemYoY" style="font-size: 16px; font-weight: 600; color: #083d7c"> 16</span>
                             </div>
                         </div>
                         <div class="col-md-6 nopadding col-xs-6 itemHeader" id="itemHeader17">
                             <div class="col-xs-3 nopadding" align="center" style="padding-right: 8px;">
                                 <span style="font-size: 14px; font-weight: 400; color: #083d7c">Actual</span><br>
-                                <span id="itemActual17" style="font-size: 16px; font-weight: 600; color: #083d7c"> 17</span>
+                                <span id="itemActual17" class="itemActual" style="font-size: 16px; font-weight: 600; color: #083d7c"> 17</span>
                             </div>
                             <div class="col-xs-3 nopadding" align="center" style="padding-right: 8px;">
                                 <span style="font-size: 14px; font-weight: 400; color: #083d7c">RKAP</span><br>
-                                <span id="itemRKAP17" style="font-size: 16px; font-weight: 600; color: #083d7c"> 17</span>
+                                <span id="itemRKAP17" class="itemRKAP" style="font-size: 16px; font-weight: 600; color: #083d7c"> 17</span>
                             </div>
                             <div class="col-xs-3 nopadding" align="center" style="padding-right: 8px;">
                                 <span style="font-size: 14px; font-weight: 400; color: #083d7c">Growth MoM</span><br>
-                                <span id="itemMoM17" style="font-size: 16px; font-weight: 600; color: #083d7c"> 17</span>
+                                <span id="itemMoM17" class="itemMoM" style="font-size: 16px; font-weight: 600; color: #083d7c"> 17</span>
                             </div>
                             <div class="col-xs-3 nopadding" align="center" style="padding-right: 8px;">
                                 <span style="font-size: 14px; font-weight: 400; color: #083d7c">Growth YoY</span><br>
@@ -363,91 +364,91 @@
                         <div class="col-md-6 nopadding col-xs-6 itemHeader" id="itemHeader18">
                             <div class="col-xs-3 nopadding" align="center" style="padding-right: 8px;">
                                 <span style="font-size: 14px; font-weight: 400; color: #083d7c">Actual</span><br>
-                                <span id="itemActual18" style="font-size: 16px; font-weight: 600; color: #083d7c"> 18</span>
+                                <span id="itemActual18" class="itemActual" style="font-size: 16px; font-weight: 600; color: #083d7c"> 18</span>
                             </div>
                             <div class="col-xs-3 nopadding" align="center" style="padding-right: 8px;">
                                 <span style="font-size: 14px; font-weight: 400; color: #083d7c">RKAP</span><br>
-                                <span id="itemRKAP18" style="font-size: 16px; font-weight: 600; color: #083d7c"> 18</span>
+                                <span id="itemRKAP18" class="itemRKAP" style="font-size: 16px; font-weight: 600; color: #083d7c"> 18</span>
                             </div>
                             <div class="col-xs-3 nopadding" align="center" style="padding-right: 8px;">
                                 <span style="font-size: 14px; font-weight: 400; color: #083d7c">Growth MoM</span><br>
-                                <span id="itemMoM18" style="font-size: 16px; font-weight: 600; color: #083d7c"> 18</span>
+                                <span id="itemMoM18" class="itemMoM" style="font-size: 16px; font-weight: 600; color: #083d7c"> 18</span>
                             </div>
                             <div class="col-xs-3 nopadding" align="center" style="padding-right: 8px;">
                                 <span style="font-size: 14px; font-weight: 400; color: #083d7c">Growth YoY</span><br>
-                                <span id="itemYoY18" style="font-size: 16px; font-weight: 600; color: #083d7c"> 18</span>
+                                <span id="itemYoY18" class="itemYoY" style="font-size: 16px; font-weight: 600; color: #083d7c"> 18</span>
                             </div>
                         </div>
                         <div class="col-md-6 nopadding col-xs-6 itemHeader" id="itemHeader19">
                             <div class="col-xs-3 nopadding" align="center" style="padding-right: 8px;">
                                 <span style="font-size: 14px; font-weight: 400; color: #083d7c">Actual</span><br>
-                                <span id="itemActual19" style="font-size: 16px; font-weight: 600; color: #083d7c"> 19</span>
+                                <span id="itemActual19" class="itemActual" style="font-size: 16px; font-weight: 600; color: #083d7c"> 19</span>
                             </div>
                             <div class="col-xs-3 nopadding" align="center" style="padding-right: 8px;">
                                 <span style="font-size: 14px; font-weight: 400; color: #083d7c">RKAP</span><br>
-                                <span id="itemRKAP19" style="font-size: 16px; font-weight: 600; color: #083d7c"> 19</span>
+                                <span id="itemRKAP19" class="itemRKAP" style="font-size: 16px; font-weight: 600; color: #083d7c"> 19</span>
                             </div>
                             <div class="col-xs-3 nopadding" align="center" style="padding-right: 8px;">
                                 <span style="font-size: 14px; font-weight: 400; color: #083d7c">Growth MoM</span><br>
-                                <span id="itemMoM19" style="font-size: 16px; font-weight: 600; color: #083d7c"> 19</span>
+                                <span id="itemMoM19" class="itemMoM" style="font-size: 16px; font-weight: 600; color: #083d7c"> 19</span>
                             </div>
                             <div class="col-xs-3 nopadding" align="center" style="padding-right: 8px;">
                                 <span style="font-size: 14px; font-weight: 400; color: #083d7c">Growth YoY</span><br>
-                                <span id="itemYoY19" style="font-size: 16px; font-weight: 600; color: #083d7c"> 19</span>
+                                <span id="itemYoY19" class="itemYoY" style="font-size: 16px; font-weight: 600; color: #083d7c"> 19</span>
                             </div>
                         </div>
                         <div class="col-md-6 nopadding col-xs-6 itemHeader" id="itemHeader20">
                             <div class="col-xs-3 nopadding" align="center" style="padding-right: 8px;">
                                 <span style="font-size: 14px; font-weight: 400; color: #083d7c">Actual</span><br>
-                                <span id="itemActual20" style="font-size: 16px; font-weight: 600; color: #083d7c"> 20</span>
+                                <span id="itemActual20" class="itemActual" style="font-size: 16px; font-weight: 600; color: #083d7c"> 20</span>
                             </div>
                             <div class="col-xs-3 nopadding" align="center" style="padding-right: 8px;">
                                 <span style="font-size: 14px; font-weight: 400; color: #083d7c">RKAP</span><br>
-                                <span id="itemRKAP20" style="font-size: 16px; font-weight: 600; color: #083d7c"> 20</span>
+                                <span id="itemRKAP20" class="itemRKAP" style="font-size: 16px; font-weight: 600; color: #083d7c"> 20</span>
                             </div>
                             <div class="col-xs-3 nopadding" align="center" style="padding-right: 8px;">
                                 <span style="font-size: 14px; font-weight: 400; color: #083d7c">Growth MoM</span><br>
-                                <span id="itemMoM20" style="font-size: 16px; font-weight: 600; color: #083d7c"> 20</span>
+                                <span id="itemMoM20" class="itemMoM" style="font-size: 16px; font-weight: 600; color: #083d7c"> 20</span>
                             </div>
                             <div class="col-xs-3 nopadding" align="center" style="padding-right: 8px;">
                                 <span style="font-size: 14px; font-weight: 400; color: #083d7c">Growth YoY</span><br>
-                                <span id="itemYoY20" style="font-size: 16px; font-weight: 600; color: #083d7c"> 20</span>
+                                <span id="itemYoY20" class="itemYoY" style="font-size: 16px; font-weight: 600; color: #083d7c"> 20</span>
                             </div>
                         </div>
                         <div class="col-md-6 nopadding col-xs-6 itemHeader" id="itemHeader21">
                             <div class="col-xs-3 nopadding" align="center" style="padding-right: 8px;">
                                 <span style="font-size: 14px; font-weight: 400; color: #083d7c">Actual</span><br>
-                                <span id="itemActual21" style="font-size: 16px; font-weight: 600; color: #083d7c"> 21</span>
+                                <span id="itemActual21" class="itemActual" style="font-size: 16px; font-weight: 600; color: #083d7c"> 21</span>
                             </div>
                             <div class="col-xs-3 nopadding" align="center" style="padding-right: 8px;">
                                 <span style="font-size: 14px; font-weight: 400; color: #083d7c">RKAP</span><br>
-                                <span id="itemRKAP21" style="font-size: 16px; font-weight: 600; color: #083d7c"> 21</span>
+                                <span id="itemRKAP21" class="itemRKAP" style="font-size: 16px; font-weight: 600; color: #083d7c"> 21</span>
                             </div>
                             <div class="col-xs-3 nopadding" align="center" style="padding-right: 8px;">
                                 <span style="font-size: 14px; font-weight: 400; color: #083d7c">Growth MoM</span><br>
-                                <span id="itemMoM21" style="font-size: 16px; font-weight: 600; color: #083d7c"> 21</span>
+                                <span id="itemMoM21" class="itemMoM" style="font-size: 16px; font-weight: 600; color: #083d7c"> 21</span>
                             </div>
                             <div class="col-xs-3 nopadding" align="center" style="padding-right: 8px;">
                                 <span style="font-size: 14px; font-weight: 400; color: #083d7c">Growth YoY</span><br>
-                                <span id="itemYoY21" style="font-size: 16px; font-weight: 600; color: #083d7c"> 21</span>
+                                <span id="itemYoY21" class="itemYoY" style="font-size: 16px; font-weight: 600; color: #083d7c"> 21</span>
                             </div>
                         </div>
                         <div class="col-md-6 nopadding col-xs-6 itemHeader" id="itemHeader22">
                             <div class="col-xs-3 nopadding" align="center" style="padding-right: 8px;">
                                 <span style="font-size: 14px; font-weight: 400; color: #083d7c">Actual</span><br>
-                                <span id="itemActual22" style="font-size: 16px; font-weight: 600; color: #083d7c"> 22</span>
+                                <span id="itemActual22" class="itemActual" style="font-size: 16px; font-weight: 600; color: #083d7c"> 22</span>
                             </div>
                             <div class="col-xs-3 nopadding" align="center" style="padding-right: 8px;">
                                 <span style="font-size: 14px; font-weight: 400; color: #083d7c">RKAP</span><br>
-                                <span id="itemRKAP22" style="font-size: 16px; font-weight: 600; color: #083d7c"> 22</span>
+                                <span id="itemRKAP22" class="itemRKAP" style="font-size: 16px; font-weight: 600; color: #083d7c"> 22</span>
                             </div>
                             <div class="col-xs-3 nopadding" align="center" style="padding-right: 8px;">
                                 <span style="font-size: 14px; font-weight: 400; color: #083d7c">Growth MoM</span><br>
-                                <span id="itemMoM22" style="font-size: 16px; font-weight: 600; color: #083d7c"> 22</span>
+                                <span id="itemMoM22" class="itemMoM" style="font-size: 16px; font-weight: 600; color: #083d7c"> 22</span>
                             </div>
                             <div class="col-xs-3 nopadding" align="center" style="padding-right: 8px;">
                                 <span style="font-size: 14px; font-weight: 400; color: #083d7c">Growth YoY</span><br>
-                                <span id="itemYoY22" style="font-size: 16px; font-weight: 600; color: #083d7c"> 22</span>
+                                <span id="itemYoY22" class="itemYoY" style="font-size: 16px; font-weight: 600; color: #083d7c"> 22</span>
                             </div>
                         </div>
 					</div>
