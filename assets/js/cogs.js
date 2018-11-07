@@ -111,7 +111,7 @@ function loadChartPerData() {
                         type: 'column'
                     },
                     title: {
-                        text: 'Trend COGS'
+                        text: ''
                     },
                     subtitle: {
                         text: ''
