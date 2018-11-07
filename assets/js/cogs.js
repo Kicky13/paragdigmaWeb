@@ -34,7 +34,7 @@ function loadChartPerData() {
     }).always(function (data) {
         console.log(data.length);
         $(".loading_overlay").addClass("opacity-on");
-        if (typeof data == 'undefined' || data.length == 0){
+        if (typeof data.data == 'undefined' || data.data.length == 0){
             for (k = 1; k < 23; k++){
                 Highcharts.chart('chartCogs' + k, {
                     chart: {
@@ -48,18 +48,18 @@ function loadChartPerData() {
                     },
                     xAxis: {
                         categories: [
-                            'Jan',
-                            'Feb',
-                            'Mar',
-                            'Apr',
-                            'May',
-                            'Jun',
-                            'Jul',
-                            'Aug',
-                            'Sep',
-                            'Oct',
-                            'Nov',
-                            'Dec'
+                            data.months[0],
+                            data.months[1],
+                            data.months[2],
+                            data.months[3],
+                            data.months[4],
+                            data.months[5],
+                            data.months[6],
+                            data.months[7],
+                            data.months[8],
+                            data.months[9],
+                            data.months[10],
+                            data.months[11]
                         ],
                         crosshair: true
                     },
@@ -105,7 +105,7 @@ function loadChartPerData() {
             }
         } else {
             indeks = 1;
-            for (i = 0; i < data.length; i++) {
+            for (i = 0; i < data.data.length; i++) {
                 Highcharts.chart('chartCogs' + indeks, {
                     chart: {
                         type: 'column'
@@ -118,18 +118,18 @@ function loadChartPerData() {
                     },
                     xAxis: {
                         categories: [
-                            'Jan',
-                            'Feb',
-                            'Mar',
-                            'Apr',
-                            'May',
-                            'Jun',
-                            'Jul',
-                            'Aug',
-                            'Sep',
-                            'Oct',
-                            'Nov',
-                            'Dec'
+                            data.months[0],
+                            data.months[1],
+                            data.months[2],
+                            data.months[3],
+                            data.months[4],
+                            data.months[5],
+                            data.months[6],
+                            data.months[7],
+                            data.months[8],
+                            data.months[9],
+                            data.months[10],
+                            data.months[11]
                         ],
                         crosshair: true
                     },
@@ -161,15 +161,15 @@ function loadChartPerData() {
                     },
                     series: [{
                         name: 'Actual',
-                        data: [parseFloat(data[i][0].REALISASI), parseFloat(data[i][1].REALISASI), parseFloat(data[i][2].REALISASI), parseFloat(data[i][3].REALISASI), parseFloat(data[i][4].REALISASI), parseFloat(data[i][5].REALISASI), parseFloat(data[i][6].REALISASI), parseFloat(data[i][7].REALISASI), parseFloat(data[i][8].REALISASI), parseFloat(data[i][9].REALISASI), parseFloat(data[i][10].REALISASI), parseFloat(data[i][11].REALISASI)]
+                        data: [parseFloat(data.data[i][0].REALISASI), parseFloat(data.data[i][1].REALISASI), parseFloat(data.data[i][2].REALISASI), parseFloat(data.data[i][3].REALISASI), parseFloat(data.data[i][4].REALISASI), parseFloat(data.data[i][5].REALISASI), parseFloat(data.data[i][6].REALISASI), parseFloat(data.data[i][7].REALISASI), parseFloat(data.data[i][8].REALISASI), parseFloat(data.data[i][9].REALISASI), parseFloat(data.data[i][10].REALISASI), parseFloat(data.data[i][11].REALISASI)]
 
                     }, {
                         name: 'Last Year Actual',
-                        data: [parseFloat(data[i][0].REALISASI_TAHUN_LALU), parseFloat(data[i][1].REALISASI_TAHUN_LALU), parseFloat(data[i][2].REALISASI_TAHUN_LALU), parseFloat(data[i][3].REALISASI_TAHUN_LALU), parseFloat(data[i][4].REALISASI_TAHUN_LALU), parseFloat(data[i][5].REALISASI_TAHUN_LALU), parseFloat(data[i][6].REALISASI_TAHUN_LALU), parseFloat(data[i][7].REALISASI_TAHUN_LALU), parseFloat(data[i][8].REALISASI_TAHUN_LALU), parseFloat(data[i][9].REALISASI_TAHUN_LALU), parseFloat(data[i][10].REALISASI_TAHUN_LALU), parseFloat(data[i][11].REALISASI_TAHUN_LALU)]
+                        data: [parseFloat(data.data[i][0].REALISASI_TAHUN_LALU), parseFloat(data.data[i][1].REALISASI_TAHUN_LALU), parseFloat(data.data[i][2].REALISASI_TAHUN_LALU), parseFloat(data.data[i][3].REALISASI_TAHUN_LALU), parseFloat(data.data[i][4].REALISASI_TAHUN_LALU), parseFloat(data.data[i][5].REALISASI_TAHUN_LALU), parseFloat(data.data[i][6].REALISASI_TAHUN_LALU), parseFloat(data.data[i][7].REALISASI_TAHUN_LALU), parseFloat(data.data[i][8].REALISASI_TAHUN_LALU), parseFloat(data.data[i][9].REALISASI_TAHUN_LALU), parseFloat(data.data[i][10].REALISASI_TAHUN_LALU), parseFloat(data.data[i][11].REALISASI_TAHUN_LALU)]
 
                     }, {
                         name: 'RKAP',
-                        data: [parseFloat(data[i][0].RKAP), parseFloat(data[i][1].RKAP), parseFloat(data[i][2].RKAP), parseFloat(data[i][3].RKAP), parseFloat(data[i][4].RKAP), parseFloat(data[i][5].RKAP), parseFloat(data[i][6].RKAP), parseFloat(data[i][7].RKAP), parseFloat(data[i][8].RKAP), parseFloat(data[i][9].RKAP), parseFloat(data[i][10].RKAP), parseFloat(data[i][11].RKAP)]
+                        data: [parseFloat(data.data[i][0].RKAP), parseFloat(data.data[i][1].RKAP), parseFloat(data.data[i][2].RKAP), parseFloat(data.data[i][3].RKAP), parseFloat(data.data[i][4].RKAP), parseFloat(data.data[i][5].RKAP), parseFloat(data.data[i][6].RKAP), parseFloat(data.data[i][7].RKAP), parseFloat(data.data[i][8].RKAP), parseFloat(data.data[i][9].RKAP), parseFloat(data.data[i][10].RKAP), parseFloat(data.data[i][11].RKAP)]
                     }]
                 });
                 [].forEach.call(document.querySelectorAll('.chartCogs'), function (el) {

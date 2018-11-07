@@ -77,11 +77,11 @@ class cogs extends CI_Controller {
         $a = $this->input->post('opco');
         $b = $this->input->post('item');
         $c = $this->input->post('year');
-        echo json_encode($this->m_cogs->getActualByYearItem($a, $b, $c));
+        echo json_encode($this->m_cogs->getTrendStartDate($a, $b, $c));
     }
 
     function test()
     {
-        echo json_encode($this->m_cogs->getTrendYearsBefore());
+        echo json_encode($this->m_cogs->getTrendStartDate(12, 2016));
     }
 }

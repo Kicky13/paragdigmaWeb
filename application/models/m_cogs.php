@@ -16,15 +16,20 @@ class m_cogs extends CI_Model
         $data = array();
         $items = $this->getAllItem($opco, $year);
         foreach ($items as $item) {
-            $temp = $this->getTrendPerItem($opco, $year, $item);
+            $temp = $this->getTrendPerItem($opco, $year, $month, $item);
             array_push($data, $temp);
         }
-        return $data;
+        $compile = array(
+            'months' => $this->getTrendYearsBefore($month),
+            'data' => $data
+        );
+        return $compile;
     }
 
-    function getTrendPerItem($opco, $year, $item)
+    function getTrendPerItem($opco, $year, $month, $item)
     {
-        $query = "SELECT * FROM COGS_UPLOAD WHERE OPCO = '" . $opco . "' AND ITEM = '" . $item . "' AND (PERIOD >= TO_DATE('" . $year . "-01-01', 'yyyy-mm-dd') AND PERIOD < TO_DATE('" . $year . "-12-30', 'yyyy-mm-dd'))";
+        $date = $this->getTrendStartDate($month, $year);
+        $query = "SELECT * FROM COGS_UPLOAD WHERE OPCO = '" . $opco . "' AND ITEM = '" . $item . "' AND (PERIOD >= TO_DATE('" . $date . "', 'yyyy-mm-dd') AND PERIOD < TO_DATE('" . $year . "-" . $month . "-28', 'yyyy-mm-dd'))";
         $data = $this->db->query($query);
         return $data->result_array();
     }
@@ -133,22 +138,77 @@ class m_cogs extends CI_Model
         return $YoY;
     }
 
-    function getTrendMonth($month)
+    function getTrendStartDate($month, $year)
     {
-
+        if ($month == 12){
+            $date = $year . '-01-01';
+        } else {
+            for ($i = 1; $i < 12; $i++) {
+                if ($i >= $month) {
+                    $m = 12 - ($i - $month);
+                } else {
+                    $m = $month - $i;
+                }
+            }
+            $date = ($year - 1) . '-' . $m . '-01';
+        }
+        return $date;
     }
 
-    function getTrendYearsBefore()
+    function getTrendYearsBefore($month)
     {
-        $date = date_create("2014-05-05");
-        for ($i = 1; $i <= 12; $i++) {
-            $months[] = date_sub($date, date_interval_create_from_date_string("12 months"));
+        $months = array();
+        for ($i = 0; $i < 12; $i++) {
+            if ($i > $month) {
+                $m = 12 - ($i - $month);
+            } else {
+                $m = $month - $i;
+            }
+            array_push($months, $this->getMonthName($m));
         }
-        return json_encode($months);
+        return array_reverse($months);
     }
 
     function getMonthName($month)
     {
-
+        switch ($month) {
+            case 1:
+                $name = 'Jan';
+                break;
+            case 2:
+                $name = 'Feb';
+                break;
+            case 3:
+                $name = 'Mar';
+                break;
+            case 4:
+                $name = 'Apr';
+                break;
+            case 5:
+                $name = 'May';
+                break;
+            case 6:
+                $name = 'Jun';
+                break;
+            case 7:
+                $name = 'Jul';
+                break;
+            case 8:
+                $name = 'Aug';
+                break;
+            case 9:
+                $name = 'Sep';
+                break;
+            case 10:
+                $name = 'Oct';
+                break;
+            case 11:
+                $name = 'Nov';
+                break;
+            default:
+                $name = 'Des';
+                break;
+        }
+        return $name;
     }
 }
