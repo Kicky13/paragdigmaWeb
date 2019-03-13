@@ -408,7 +408,10 @@
 					<ul>
                         <li style="color: 008840; font-weight: normal; font-size: 14px">Account Receivable</li>
 					</ul>
-				</li>
+			</li>
+			<li class="haschild">
+				<a onclick="openInNewTab('../cogs/trend', this)"><i class="medium material-icons">attach_money</i>&nbsp;COGS</a>
+			</li>
 			<li class="haschild">
 				<a onclick="changepage('ldap_access/logout')"><i class="medium material-icons">exit_to_app</i>&nbsp;Logout</a>
 			</li>

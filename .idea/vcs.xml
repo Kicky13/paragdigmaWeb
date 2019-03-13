@@ -2,5 +2,32 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/influx/vendor/codeclimate/php-test-reporter" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/influx/vendor/composer/ca-bundle" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/influx/vendor/doctrine/instantiator" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/influx/vendor/guzzlehttp/guzzle" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/influx/vendor/influxdb/influxdb-php" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/influx/vendor/padraic/phar-updater" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/influx/vendor/phpspec/prophecy" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/influx/vendor/phpunit/php-code-coverage" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/influx/vendor/phpunit/php-file-iterator" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/influx/vendor/phpunit/php-token-stream" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/influx/vendor/phpunit/phpunit-mock-objects" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/influx/vendor/psr/http-message" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/influx/vendor/psr/log" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/influx/vendor/satooshi/php-coveralls" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/influx/vendor/sebastian/comparator" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/influx/vendor/sebastian/diff" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/influx/vendor/sebastian/environment" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/influx/vendor/sebastian/exporter" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/influx/vendor/sebastian/recursion-context" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/influx/vendor/symfony/config" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/influx/vendor/symfony/console" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/influx/vendor/symfony/debug" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/influx/vendor/symfony/event-dispatcher" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/influx/vendor/symfony/filesystem" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/influx/vendor/symfony/polyfill-mbstring" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/influx/vendor/symfony/stopwatch" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/influx/vendor/symfony/yaml" vcs="Git" />
   </component>
 </project>

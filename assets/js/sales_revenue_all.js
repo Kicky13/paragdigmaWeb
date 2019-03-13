@@ -194,11 +194,12 @@ function numberFormat(x) {
 }
 function view(bulan, tahun, opco){
 	var bln=bulan;
+    var peropcoRev = [];
 	if(bulan<=9){
 		bulan = '0'+bulan;
-	}else{
+	} else {
 		bulan = bulan;
-	};
+	}
 	var date = new Date();
 	if(tahun<date.getFullYear()||bln<date.getMonth()+1){
 		$('.persen-group .persen-today').css({"display":"none"});
@@ -282,9 +283,12 @@ function view(bulan, tahun, opco){
 			font_year_to_day.siblings('i').addClass('fa-thumbs-up').css('color','green');
 		}
 		font_year_to_day.html(numberFormat(persen_year_to_day)+'%');
+    }).done( function (data) {
+		jsonUpload_control(JSON.stringify(data), 'Sales', 'Global_Revenue', 'SMIG_Revenue_' + tahun + '-' + bulan);
     });
     $.getJSON(base_url+'Sales_revenue_bpc/globalVolumeRevenue_BAG_BULK_KLINKER/'+tahun+'.'+bulan, function(data){
 		/* Today */
+		materialRev = JSON.stringify(data);
 		dataToday = [{
 					name: 'Act '+data.data_prevyear.MONTH+' '+data.data_prevyear.YEAR,
 					color: '#2ED573',
@@ -392,6 +396,8 @@ function view(bulan, tahun, opco){
 					]
 				}];
 		YearUpToChart(dataYearToday);
+    }).done(function (data) {
+		jsonUpload_control(JSON.stringify(data), 'Sales', 'Material_Revenue', 'Bag-Bulk-Clinker_Revenue_' + tahun + '-' + bulan);
     });
 	tableProv(bulan, tahun, opco, 1);
 	var all_opco = [3000,4000,5000,6000,7000];
@@ -439,21 +445,27 @@ function view(bulan, tahun, opco){
 				font_year_to_day.siblings('i').addClass('fa-thumbs-up').css('color','green');
 			}
 			font_year_to_day.html(numberFormat(persen_year_to_day.toFixed(2))+'%');
-		});
+		}).done(function (data) {
+			opconow = data.COMPANY;
+			jsonUpload_control(JSON.stringify(data), 'Sales', 'Opco_Revenue', 'Opco-' + opconow + '_Revenue_' + tahun + '-' + bulan);
+        });
 	}    
-	$(".loading_overlay").addClass("opacity-on"); 
+	$(".loading_overlay").addClass("opacity-on");
 }	
 function tableProv(bulan, tahun, opco, type){
 	var urlType, titleType;
 	if(type==1){
 		urlType = "globalVolumeRevenue_ALL_PROV";
 		titleType = "Bag";
-	}else if(type==2){
+		tipeMaterial = "Bag";
+	}else if(type == 2){
 		urlType = "globalVolumeRevenue_ALL_PROV_Bulk";
 		titleType = "Bulk";
+		tipeMaterial = "Bulk";
 	}else{
 		urlType = "globalVolumeRevenue_ALL_PROV_CLINKER";
 		titleType = "Clinker";
+		tipeMaterial = "Clinker";
 	}
 	$('.choosedTitle b').html(titleType);
 	$('.table-volume tfoot').css({"display":"none"});
@@ -501,6 +513,8 @@ function tableProv(bulan, tahun, opco, type){
 			"info": false,
 			"paging":false
 		});
+    }).done(function (data) {
+		jsonUpload_control(JSON.stringify(data), 'Sales', 'Prov_Revenue', tipeMaterial + '_All-Prov_' + tahun + '-' + bulan);
     });
 	// $.getJSON(base_url+'Sales_revenue_bpc/globalVolumeRevenue_ALL_PROV_CLINKER/'+tahun+'.'+bulan, function(data){
 	// 	if ( $.fn.DataTable.isDataTable('.table-market') ) {
@@ -536,6 +550,23 @@ function tableProv(bulan, tahun, opco, type){
 	// 		"paging":false
 	// 	});
  //    });
+}
+
+function jsonUpload_control(text, mainFolder, subFolder, title)
+{
+	console.log(text + ', ' + mainFolder + '/' + subFolder + '/' + title);
+	$.ajax({
+		url: base_url + 'json_control/uploadControl',
+		type: 'POST',
+		dataType: 'JSON',
+		data: {
+			saveDir: mainFolder + '/' + subFolder,
+			docTitle: title,
+			jsonContent: text
+		}
+	}).done(function (data) {
+		console.log(data);
+    });
 }
 var curOpco;
 var bulan;

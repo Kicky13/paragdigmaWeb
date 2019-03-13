@@ -57,22 +57,17 @@ class mfinance_report extends CI_Model {
         //jadikan tahun menjadi tahan lalu
         $time_between_lalu = str_replace($year, $year_lalu, $time_between);
 
-        $where = "AND AUDITTRAIL = 'PL_CONS'  
-                    AND COSTCENTER_COMPONENT = 'NO_CC' 
-                    AND DOCUMENT_TYPE = 'NO_DOC' 
-                    AND FLOW = 'CLOSING' 
-                    AND GL_ACCOUNT = C.GL_ACCOUNT
+        $where = "
+                    AND TITLE = C.TITLE
                     $cm
-                    AND CURRENCY = 'LC' 
-                    AND SCOPE = 'NON_GROUP' 
                     AND";
         //elim
         if ($comp == 'SI') {
-            $elim = "(SELECT SUM(VAL) FROM MV_LABA_RUGI_ELIM WHERE TITLE = C.GL_ACCOUNT AND CATEGORY = 'ACT' AND FISCAL_YEAR_PERIOD = '$year.$bln') AS ELIM,
-                (SELECT SUM(VAL) FROM MV_LABA_RUGI_ELIM WHERE TITLE = C.GL_ACCOUNT AND CATEGORY = 'ACT' AND FISCAL_YEAR_PERIOD = '$year.$bln_lalu') AS ELIM_BLALU,
-                (SELECT SUM(VAL) FROM MV_LABA_RUGI_ELIM WHERE TITLE = C.GL_ACCOUNT AND CATEGORY = 'ACT' AND FISCAL_YEAR_PERIOD = '$year_lalu.$bln') AS ELIM_LALU,
-                (SELECT SUM(VAL) FROM MV_LABA_RUGI_ELIM WHERE TITLE = C.GL_ACCOUNT AND CATEGORY = 'ACT' AND FISCAL_YEAR_PERIOD IN ($time_between)) AS ELIM1,
-                (SELECT SUM(VAL) FROM MV_LABA_RUGI_ELIM WHERE TITLE = C.GL_ACCOUNT AND CATEGORY = 'ACT' AND  FISCAL_YEAR_PERIOD IN ($time_between_lalu)) AS ELIM_LALU1,";
+            $elim = "(SELECT SUM(VAL) FROM MV_LABA_RUGI_ELIM WHERE TITLE = C.TITLE AND CATEGORY = 'ACT' AND FISCAL_YEAR_PERIOD = '$year.$bln') AS ELIM,
+                (SELECT SUM(VAL) FROM MV_LABA_RUGI_ELIM WHERE TITLE = C.TITLE AND CATEGORY = 'ACT' AND FISCAL_YEAR_PERIOD = '$year.$bln_lalu') AS ELIM_BLALU,
+                (SELECT SUM(VAL) FROM MV_LABA_RUGI_ELIM WHERE TITLE = C.TITLE AND CATEGORY = 'ACT' AND FISCAL_YEAR_PERIOD = '$year_lalu.$bln') AS ELIM_LALU,
+                (SELECT SUM(VAL) FROM MV_LABA_RUGI_ELIM WHERE TITLE = C.TITLE AND CATEGORY = 'ACT' AND FISCAL_YEAR_PERIOD IN ($time_between)) AS ELIM1,
+                (SELECT SUM(VAL) FROM MV_LABA_RUGI_ELIM WHERE TITLE = C.TITLE AND CATEGORY = 'ACT' AND  FISCAL_YEAR_PERIOD IN ($time_between_lalu)) AS ELIM_LALU1,";
 
             $elim_sales = "(SELECT SUM(VAL) FROM MV_LABA_RUGI_ELIM WHERE TITLE = 'PL_HPB_SALES' AND CATEGORY = 'ACT' AND FISCAL_YEAR_PERIOD = '$year.$bln') AS ELIM,
                 (SELECT SUM(VAL) FROM MV_LABA_RUGI_ELIM WHERE TITLE = 'PL_HPB_SALES' AND CATEGORY = 'ACT' AND FISCAL_YEAR_PERIOD = '$year.$bln_lalu') AS ELIM_BLN_LALU,
@@ -82,23 +77,23 @@ class mfinance_report extends CI_Model {
             $elim = "0 AS ELIM, 0 AS ELIM_BLALU, 0 AS ELIM_LALU, 0 AS ELIM1, 0 AS ELIM_LALU1,";
             $elim_sales = "0 AS ELIM, 0 AS ELIM_BLN_LALU, 0 AS ELIM_OLD, 0 AS ELIM_BLN_LALU_OLD";
         }
-        $q = $this->db->query("SELECT C.GL_ACCOUNT,
+        $q = $this->db->query("SELECT C.TITLE,
             $elim
-            (SELECT SUM(AMOUNT) FROM CONSOLIDATION WHERE CATEGORY = 'BUD' $where FISCAL_YEAR_PERIOD = '$year.$bln') AS BUD,
-            (SELECT SUM(AMOUNT) FROM CONSOLIDATION WHERE CATEGORY = 'ACT' $where FISCAL_YEAR_PERIOD = '$year.$bln') AS ACT,
-            (SELECT SUM(AMOUNT) FROM CONSOLIDATION WHERE CATEGORY = 'ACT' $where FISCAL_YEAR_PERIOD = '$year.$bln_lalu') AS ACT_BLALU,
-            (SELECT SUM(AMOUNT) FROM CONSOLIDATION WHERE CATEGORY = 'ACT' $where FISCAL_YEAR_PERIOD = '$year_lalu.$bln') AS ACT_LALU,
-            (SELECT SUM(AMOUNT) FROM CONSOLIDATION WHERE CATEGORY = 'BUD' $where FISCAL_YEAR_PERIOD IN ($time_between)) AS BUD1,
-            (SELECT SUM(AMOUNT) FROM CONSOLIDATION WHERE CATEGORY = 'ACT' $where FISCAL_YEAR_PERIOD IN ($time_between)) AS ACT1,
-            (SELECT SUM(AMOUNT) FROM CONSOLIDATION WHERE CATEGORY = 'ACT' $where FISCAL_YEAR_PERIOD IN ($time_between_lalu)) AS ACT_LALU1
-            FROM CONSOLIDATION C
-            WHERE GL_ACCOUNT IN ('PL_VLP', 'PL_HPB', 'PL_OA', 'PL_BPP', 'PL_BUA', 'PL_BPE', 'PL_E', 'PL_E1', 'PL_BP', 'PL_LRSK', 'PL_PLL', 'PL_BPP1', 'PL_LRSK1', 'PL_PLL1', 'PL_TPP', 'PL_BA', 'PL_PB', 'PL_BPD', 'PL_BLL' ) 
-            GROUP BY GL_ACCOUNT");
+            (SELECT SUM(VAL) FROM MV_LABA_RUGI_V1 WHERE CATEGORY = 'BUD' $where FISCAL_YEAR_PERIOD = '$year.$bln') AS BUD,
+            (SELECT SUM(VAL) FROM MV_LABA_RUGI_V1 WHERE CATEGORY = 'ACT' $where FISCAL_YEAR_PERIOD = '$year.$bln') AS ACT,
+            (SELECT SUM(VAL) FROM MV_LABA_RUGI_V1 WHERE CATEGORY = 'ACT' $where FISCAL_YEAR_PERIOD = '$year.$bln_lalu') AS ACT_BLALU,
+            (SELECT SUM(VAL) FROM MV_LABA_RUGI_V1 WHERE CATEGORY = 'ACT' $where FISCAL_YEAR_PERIOD = '$year_lalu.$bln') AS ACT_LALU,
+            (SELECT SUM(VAL) FROM MV_LABA_RUGI_V1 WHERE CATEGORY = 'BUD' $where FISCAL_YEAR_PERIOD IN ($time_between)) AS BUD1,
+            (SELECT SUM(VAL) FROM MV_LABA_RUGI_V1 WHERE CATEGORY = 'ACT' $where FISCAL_YEAR_PERIOD IN ($time_between)) AS ACT1,
+            (SELECT SUM(VAL) FROM MV_LABA_RUGI_V1 WHERE CATEGORY = 'ACT' $where FISCAL_YEAR_PERIOD IN ($time_between_lalu)) AS ACT_LALU1
+            FROM MV_LABA_RUGI_V1 C
+            WHERE TITLE IN ('PL_VLP', 'PL_HPB', 'PL_OA', 'PL_BPP', 'PL_BUA', 'PL_BPE', 'PL_E', 'PL_E1', 'PL_BP', 'PL_LRSK', 'PL_PLL', 'PL_BPP1', 'PL_LRSK1', 'PL_PLL1', 'PL_TPP', 'PL_BA', 'PL_PB', 'PL_BPD', 'PL_BLL' ) 
+            GROUP BY TITLE");
 
         $dt['temp'][0] = 0;
         $qyr = $q->result();
         foreach ($qyr as $sh) {
-            $gl_account = $sh->GL_ACCOUNT;
+            $gl_account = $sh->TITLE;
             $dt['BUD'][$gl_account] = $sh->BUD;
             $dt['BUD1'][$gl_account] = $sh->BUD1;
 
@@ -183,36 +178,32 @@ class mfinance_report extends CI_Model {
         //jadikan tahun menjadi tahan lalu
         $time_between_lalu = str_replace($year, $year_lalu, $time_between);
 
-        $where = "AND AUDITTRAIL = 'PL_CONS'  
-                    AND COSTCENTER_COMPONENT = 'NO_CC' 
-                    AND DOCUMENT_TYPE = 'NO_DOC' 
-                    AND FLOW = 'CLOSING' 
-                    AND GL_ACCOUNT = C.GL_ACCOUNT
+        $where = "
+                    AND TITLE = C.TITLE
                     $cm
-                    AND CURRENCY = 'LC' 
-                    AND SCOPE = 'NON_GROUP'";
+                    ";
         //elim
         if ($comp == 'SI') {
-            $elim = "(SELECT SUM(VAL) FROM MV_LABA_RUGI_ELIM WHERE TITLE = C.GL_ACCOUNT AND CATEGORY = 'ACT' AND FISCAL_YEAR_PERIOD LIKE ('%$year%')) AS ELIM";
+            $elim = "(SELECT SUM(VAL) FROM MV_LABA_RUGI_ELIM WHERE TITLE = C.TITLE AND CATEGORY = 'ACT' AND FISCAL_YEAR_PERIOD LIKE ('%$year%')) AS ELIM";
             $elim_sales = "(SELECT SUM(VAL) FROM MV_LABA_RUGI_ELIM WHERE TITLE = 'PL_HPB_SALES' AND CATEGORY = 'ACT' AND FISCAL_YEAR_PERIOD LIKE ('%$year%')) AS ELIM";
         } else {
             $elim = "0 AS ELIM";
             $elim_sales = "0 AS ELIM";
         }
 
-        $q = $this->db->query("SELECT C.GL_ACCOUNT,
+        $q = $this->db->query("SELECT C.TITLE,
     		$elim,
-            (SELECT SUM(AMOUNT) FROM CONSOLIDATION WHERE CATEGORY = 'BUD' $where AND FISCAL_YEAR_PERIOD = '$year.$bln') AS BUD,
-            (SELECT SUM(AMOUNT) FROM CONSOLIDATION WHERE CATEGORY = 'ACT' $where AND FISCAL_YEAR_PERIOD = '$year.$bln') AS ACT
-            FROM CONSOLIDATION C
-            WHERE GL_ACCOUNT IN $cat
-		 	GROUP BY GL_ACCOUNT");
+            (SELECT SUM(VAL) FROM MV_LABA_RUGI_V1 WHERE CATEGORY = 'BUD' $where AND FISCAL_YEAR_PERIOD = '$year.$bln') AS BUD,
+            (SELECT SUM(VAL) FROM MV_LABA_RUGI_V1 WHERE CATEGORY = 'ACT' $where AND FISCAL_YEAR_PERIOD = '$year.$bln') AS ACT
+            FROM MV_LABA_RUGI_V1 C
+            WHERE TITLE IN $cat
+		 	GROUP BY TITLE");
 
 //        echo $this->db->last_query();exit;
         $dt['temp'][0] = 0;
         $qyr = $q->result();
         foreach ($qyr as $sh) {
-            $gl_account = $sh->GL_ACCOUNT;
+            $gl_account = $sh->TITLE;
             $dt['BUD'][$gl_account] = $sh->BUD;
 
             $act = $sh->ACT;

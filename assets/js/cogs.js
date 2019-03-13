@@ -78,7 +78,7 @@ function loadChartPerData() {
                     tooltip: {
                         headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
                         pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
-                            '<td style="padding:0"><b>{point.y:.1f} mm</b></td></tr>',
+                            '<td style="padding:0"><b>{point.y:.1f} mio</b></td></tr>',
                         footerFormat: '</table>',
                         shared: true,
                         useHTML: true
@@ -148,7 +148,7 @@ function loadChartPerData() {
                     tooltip: {
                         headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
                         pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
-                            '<td style="padding:0"><b>{point.y:.1f} mm</b></td></tr>',
+                            '<td style="padding:0"><b>{point.y:.1f} mio</b></td></tr>',
                         footerFormat: '</table>',
                         shared: true,
                         useHTML: true
@@ -226,7 +226,7 @@ function loadChartAll() {
                 type: 'column'
             },
             title: {
-                text: 'Actual COGS'
+                text: 'Actual Value'
             },
             subtitle: {
                 text: ''
@@ -306,10 +306,10 @@ function setHeaderData() {
         console.log(data.MoM);
         if (typeof data.MoM == 'undefined' || data.MoM.length == 0){
             for (n = 1; n < document.querySelectorAll('.itemActual').length; n++){
-                document.getElementById('itemYoY' + n).innerHTML = '?';
-                document.getElementById('itemMoM' + n).innerHTML = '?';
-                document.getElementById('itemActual' + n).innerHTML = '?';
-                document.getElementById('itemRKAP' + n).innerHTML = '?';
+                document.getElementById('itemYoY' + n).innerHTML = '0';
+                document.getElementById('itemMoM' + n).innerHTML = '0';
+                document.getElementById('itemActual' + n).innerHTML = '0';
+                document.getElementById('itemRKAP' + n).innerHTML = '0';
             }
         } else {
             indeks = 1;

@@ -121,6 +121,7 @@
 				"finance_dashboard/operation_expense",
 				"finance_dashboard/finance_home",
 				"finance_dashboard/cost_sheet",
+				"finance_dashboard/margin_report"
 			]; 
 			var title_page = [
 				"Cash & Liquidity SMIG",
@@ -134,6 +135,7 @@
 				"Income Statement SMIG",
 				"HOME",
 				"Cost Sheet",
+				"Margin Report"
 			];
 			<?php }elseif($this->router->fetch_class()=="material_management"){ ?>
 			var url_redirect = [
@@ -579,6 +581,7 @@
                         <li <?php echo ($current_url=='finance_dashboard/income')? "class='active'" : "" ;?>><a onclick="openInNewTab('finance_dashboard/income', this)">Overview</a></li>
                         <li <?php echo ($current_url=='finance_dashboard/income_statement')? "class='active'" : "" ;?>><a onclick="openInNewTab('finance_dashboard/income_statement', this)">Cost Of Revenue</a></li>
                         <li <?php echo ($current_url=='finance_dashboard/operation_expense')? "class='active'" : "" ;?>><a onclick="openInNewTab('finance_dashboard/operation_expense', this)">Operation Expense</a></li>
+                        <li <?php echo ($current_url=='finance_dashboard/margin_report')? "class='active'" : "" ;?>><a onclick="openInNewTab('finance_dashboard/margin_report', this)">Margin Report</a></li>
                         
 					</ul>
 				</li>

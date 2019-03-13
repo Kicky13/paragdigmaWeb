@@ -39,6 +39,7 @@
 							<option value="2016">2016</option>
 							<option value="2017">2017</option>
 							<option value="2018">2018</option>
+                            <option value="2019">2019</option>
 						</select>&nbsp;&nbsp;&nbsp;
 					<a id="find" class="highlight_option find" style="display: inline-block; margin-top: 8px; width: 60px;">
 						<span>Find</span>

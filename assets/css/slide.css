@@ -1593,8 +1593,8 @@ box-shadow: 0px 0px 10px #464646;
 }
 
 .totvalue {
-    color: #F91b5e !important;
-    font-size: 20px;
+    /*color: #F91b5e !important;*/
+    font-size: 18px;
     font-weight: 700;
     padding-right: 0px;
 }

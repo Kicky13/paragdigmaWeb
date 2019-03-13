@@ -149,7 +149,7 @@ class cogs_upload extends CI_Controller
     {
         switch ($opcoString) {
             case 'SI':
-                $opco = '2000';
+                $opco = '7000';
                 break;
             case 'SG':
                 $opco = '5000';

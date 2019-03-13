@@ -2,7 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b25838e5-215a-4244-8956-1b74fa9bc6f0" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/config/database.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/cogs_upload.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/cogs_upload.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/finance_dashboard.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/finance_dashboard.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/sales_dashboard.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/sales_dashboard.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/models/mfinance_report.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/models/mfinance_report.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/models/mprocurement.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/models/mprocurement.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/plant_information/administrator_index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/plant_information/administrator_index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/plant_information/cogs/trend.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/plant_information/cogs/trend.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/plant_information/finance/income.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/plant_information/finance/income.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/plant_information/finance/income_statement.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/plant_information/finance/income_statement.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/plant_information/finance/operation_expense.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/plant_information/finance/operation_expense.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/plant_information/material_management/procurement.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/plant_information/material_management/procurement.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/plant_information/material_management/report.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/plant_information/material_management/report.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/plant_information/sales/sales_revenue_all.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/plant_information/sales/sales_revenue_all.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/plant_information/sales/sales_revenue_detail.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/plant_information/sales/sales_revenue_detail.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/plant_information/sales/sales_volume_all.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/plant_information/sales/sales_volume_all.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/plant_information/sales/sales_volume_detail.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/plant_information/sales/sales_volume_detail.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/plant_information/treasury/cashposition.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/plant_information/treasury/cashposition.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/plant_information/treasury/exchangerate.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/plant_information/treasury/exchangerate.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/cogs/COGS_19Okt18_1.xls" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cogs/COGS_19Okt18_1.xls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/slide.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/slide.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/js/cogs.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/cogs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/sales_revenue_all.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/sales_revenue_all.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maps/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/maps/index.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,177 +39,163 @@
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
   </component>
-  <component name="DatabaseView">
-    <option name="SHOW_INTERMEDIATE" value="true" />
-    <option name="GROUP_DATA_SOURCES" value="true" />
-    <option name="GROUP_SCHEMA" value="true" />
-    <option name="GROUP_CONTENTS" value="false" />
-    <option name="SORT_POSITIONED" value="false" />
-    <option name="SHOW_EMPTY_GROUPS" value="false" />
-    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
-    <option name="HIDDEN_KINDS">
-      <set />
-    </option>
-    <expand />
-    <select />
-  </component>
   <component name="FUSProjectUsageTrigger">
     <session id="1511454020">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="5" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.26" value="1" />
-          <entry key="project.open.time.30" value="2" />
-          <entry key="project.open.time.33" value="2" />
+          <entry key="project.open.time.30" value="1" />
+          <entry key="project.open.time.33" value="1" />
           <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="6" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="php" value="11" />
+          <entry key="php" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="PHP" value="11" />
+          <entry key="PHP" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="php" value="2126" />
+          <entry key="php" value="1046" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PHP" value="2126" />
+          <entry key="PHP" value="1046" />
         </counts>
       </usages-collector>
     </session>
     <session id="-1266200674">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="31" />
-          <entry key="project.open.time.0" value="1" />
-          <entry key="project.open.time.22" value="1" />
-          <entry key="project.open.time.23" value="1" />
-          <entry key="project.open.time.25" value="1" />
-          <entry key="project.open.time.28" value="2" />
-          <entry key="project.open.time.29" value="2" />
-          <entry key="project.open.time.30" value="4" />
-          <entry key="project.open.time.31" value="3" />
-          <entry key="project.open.time.32" value="3" />
-          <entry key="project.open.time.33" value="1" />
-          <entry key="project.open.time.34" value="1" />
-          <entry key="project.open.time.35" value="3" />
-          <entry key="project.open.time.36" value="1" />
-          <entry key="project.open.time.37" value="2" />
-          <entry key="project.open.time.43" value="2" />
-          <entry key="project.open.time.44" value="1" />
-          <entry key="project.open.time.46" value="1" />
-          <entry key="project.open.time.51" value="2" />
-          <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="33" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="js" value="3844" />
-          <entry key="php" value="13726" />
-          <entry key="txt" value="25" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="JavaScript" value="3844" />
-          <entry key="PHP" value="13710" />
-          <entry key="PLAIN_TEXT" value="25" />
-          <entry key="SQL" value="16" />
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.32" value="1" />
+          <entry key="project.open.time.35" value="1" />
+          <entry key="project.open.time.38" value="1" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="gitignore" value="1" />
-          <entry key="js" value="9" />
-          <entry key="php" value="31" />
+          <entry key="js" value="1" />
+          <entry key="json" value="1" />
+          <entry key="php" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JavaScript" value="9" />
-          <entry key="PHP" value="31" />
-          <entry key="PLAIN_TEXT" value="1" />
+          <entry key="JSON" value="1" />
+          <entry key="JavaScript" value="1" />
+          <entry key="PHP" value="7" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="js" value="1223" />
+          <entry key="php" value="190" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JavaScript" value="1223" />
+          <entry key="PHP" value="190" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/assets/js/cogs.js">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/controllers/cogs_upload.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="313">
-              <caret line="332" column="31" lean-forward="true" selection-start-line="332" selection-start-column="31" selection-end-line="332" selection-end-column="31" />
+            <state relative-caret-position="952">
+              <caret line="56" column="1" selection-start-line="56" selection-start-column="1" selection-end-line="56" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/controllers/profit_lost.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2754">
+              <caret line="162" column="14" selection-start-line="162" selection-start-column="14" selection-end-line="162" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/views/plant_information/upload/cogs_upload.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="901">
+              <caret line="53" column="25" selection-start-line="53" selection-start-column="25" selection-end-line="53" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/controllers/sales_dashboard.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="22" lean-forward="true" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/views/plant_information/sales/sales_revenue_all.php">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/assets/js/sales_revenue_all.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-551">
+              <caret line="567" column="24" selection-start-line="567" selection-start-column="24" selection-end-line="567" selection-end-column="24" />
               <folding>
-                <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#td#0;n#tr#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#td#1;n#tr#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#td#0;n#tr#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#td#1;n#tr#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#td#0;n#tr#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#td#1;n#tr#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#tr#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#td#0;n#tr#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#0;n#!!top" expanded="true" />
+                <element signature="n#style#1;n#td#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/controllers/cogs.php">
+        <entry file="file://$PROJECT_DIR$/application/controllers/json_control.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1428">
-              <caret line="84" column="66" selection-start-line="84" selection-start-column="66" selection-end-line="84" selection-end-column="66" />
+            <state relative-caret-position="289">
+              <caret line="17" column="61" selection-start-line="17" selection-start-column="61" selection-end-line="17" selection-end-column="61" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/models/m_cogs.php">
+        <entry file="file://$PROJECT_DIR$/../paradigma_dev/api/application/controllers/upload_control.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="31" column="206" selection-start-line="31" selection-start-column="206" selection-end-line="31" selection-end-column="206" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/views/plant_information/cogs/trend.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="714">
-              <caret line="42" column="32" selection-start-line="42" selection-start-column="32" selection-end-line="42" selection-end-column="32" />
+            <state relative-caret-position="374">
+              <caret line="22" column="20" lean-forward="true" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="JavaScript File" />
-      </list>
-    </option>
-  </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>$file</find>
-      <find>ButtonProfitLost</find>
-      <find>Get Sta</find>
-      <find>getActualByYearItem</find>
-      <find>getMonthActual</find>
-      <find>cogs_tit</find>
-      <find>loading_overlay</find>
+      <find>DailyChart</find>
+      <find>tableProv</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -194,16 +206,10 @@
       <list>
         <option value="$PROJECT_DIR$/application/config/config.php" />
         <option value="$PROJECT_DIR$/application/controllers/profit_lost.php" />
-        <option value="$PROJECT_DIR$/application/views/plant_information/upload/profit_lost.php" />
-        <option value="D:/ENTERTAINING/HOBBIES/CODING/Coba/screens/HomeScreen.js" />
-        <option value="$PROJECT_DIR$/application/controllers/.gitignore" />
-        <option value="$PROJECT_DIR$/application/views/plant_information/upload/cogs_upload.php" />
         <option value="$PROJECT_DIR$/application/controllers/cogs_upload.php" />
-        <option value="$PROJECT_DIR$/application/views/plant_information/cogs/trend.php" />
-        <option value="$PROJECT_DIR$/application/phpinfo.php" />
-        <option value="$PROJECT_DIR$/application/controllers/cogs.php" />
-        <option value="$PROJECT_DIR$/application/models/m_cogs.php" />
-        <option value="$PROJECT_DIR$/assets/js/cogs.js" />
+        <option value="$PROJECT_DIR$/application/views/plant_information/upload/cogs_upload.php" />
+        <option value="$PROJECT_DIR$/assets/js/sales_revenue_all.js" />
+        <option value="$PROJECT_DIR$/application/controllers/json_control.php" />
       </list>
     </option>
   </component>
@@ -238,7 +244,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -251,22 +256,24 @@
               <item name="dashboardBOD" type="462c0819:PsiDirectoryNode" />
               <item name="application" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="dashboardBOD" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dashboardBOD" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../eproc_int_devprod/static/js/pages/EC_report_chat.js" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../paradigma_dev/api/application/controllers/upload_control.php" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-  </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\dashboardBOD" />
-    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -293,65 +300,26 @@
       <workItem from="1539741804585" duration="15353000" />
       <workItem from="1539768143164" duration="1351000" />
       <workItem from="1539823067452" duration="9378000" />
-      <workItem from="1539836398586" duration="2551000" />
-      <workItem from="1539845411403" duration="9819000" />
-      <workItem from="1539872162343" duration="2311000" />
-      <workItem from="1539874661442" duration="369000" />
-      <workItem from="1539908544328" duration="5581000" />
-      <workItem from="1539914697432" duration="68000" />
-      <workItem from="1539914840976" duration="7841000" />
-      <workItem from="1539928095528" duration="9218000" />
-      <workItem from="1539996436665" duration="4999000" />
-      <workItem from="1540123403326" duration="1541000" />
-      <workItem from="1540168401542" duration="6850000" />
-      <workItem from="1540180173987" duration="1025000" />
-      <workItem from="1540255342125" duration="1785000" />
-      <workItem from="1540263522060" duration="561000" />
-      <workItem from="1540264671814" duration="3956000" />
-      <workItem from="1540274984295" duration="1531000" />
-      <workItem from="1540278039022" duration="7123000" />
-      <workItem from="1540341353200" duration="14365000" />
-      <workItem from="1540365531512" duration="2444000" />
-      <workItem from="1540515782313" duration="9007000" />
-      <workItem from="1540534715574" duration="2768000" />
-      <workItem from="1540542774673" duration="1752000" />
-      <workItem from="1540859140385" duration="4269000" />
-      <workItem from="1540956678432" duration="598000" />
-      <workItem from="1540963178675" duration="602000" />
-      <workItem from="1541032352689" duration="13454000" />
-      <workItem from="1541054611568" duration="10126000" />
-      <workItem from="1541119308859" duration="6346000" />
-      <workItem from="1541136053221" duration="206000" />
-      <workItem from="1541141384222" duration="9407000" />
-      <workItem from="1541301775429" duration="10138000" />
-      <workItem from="1541325414999" duration="8824000" />
-      <workItem from="1541378925327" duration="5160000" />
-      <workItem from="1541466217918" duration="11815000" />
-      <workItem from="1541492299761" duration="747000" />
-      <workItem from="1541552419091" duration="708000" />
+      <workItem from="1539836398586" duration="2391000" />
+      <workItem from="1551626745615" duration="294000" />
+      <workItem from="1551681837594" duration="4002000" />
+      <workItem from="1551748042075" duration="6753000" />
+      <workItem from="1552266862325" duration="5667000" />
     </task>
-    <task id="LOCAL-00001" summary="Penambahan COGS Upload">
-      <created>1540356513024</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1540356513024</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="205947000" />
+    <option name="totallyTimeSpent" value="45189000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.46596065" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28895614" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32923076" />
+      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -360,12 +328,12 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.3276923" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.3295082" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" weight="0.32980332" />
+      <window_info anchor="right" id="Database" order="3" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -373,10 +341,6 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="Penambahan COGS Upload" />
-    <option name="LAST_COMMIT_MESSAGE" value="Penambahan COGS Upload" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/vendor/composer/ClassLoader.php">
@@ -399,6 +363,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/plant_information/upload/profit_lost.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="101" lean-forward="true" selection-start-line="8" selection-start-column="101" selection-end-line="8" selection-end-column="101" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/config/database.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2958">
@@ -413,179 +384,73 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/profit_lost.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="28" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/plant_information/upload/profit_lost.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="61" selection-start-line="10" selection-start-column="61" selection-end-line="10" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/plant_information/finance/cost_sheet.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3934" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/plant_information/finance/operation_expense.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-816" />
-      </provider>
-    </entry>
-    <entry file="file://D:/ENTERTAINING/HOBBIES/CODING/Coba/screens/HomeScreen.js" />
-    <entry file="file://$PROJECT_DIR$/application/controllers/.gitignore" />
-    <entry file="file://$PROJECT_DIR$/application/views/plant_information/finance/finance_home.php">
+    <entry file="file://$PROJECT_DIR$/jsonFile/SalesDaily_2019-02-14.json">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/plant_information/upload/cogs_upload.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1423">
-          <caret line="86" column="45" selection-start-line="86" selection-start-column="45" selection-end-line="86" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../eproc_int_devprod/static/js/pages/EC_konfigurasi_langsung.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-229">
-          <caret line="52" selection-start-line="52" selection-end-line="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../eproc_int_devprod/static/js/pages/EC_po_pl_approval.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-78" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/finance.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/system/helpers/url_helper.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="64" column="13" selection-start-line="64" selection-start-column="13" selection-end-line="64" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/scm_dailyms_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2780" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/m_master.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="466">
-          <caret line="5306" column="34" lean-forward="true" selection-start-line="5306" selection-start-column="34" selection-end-line="5306" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../eproc_int_devprod/application/models/ec_po_pl_approval_m.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3357" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../eproc_int_devprod/static/js/pages/EC_report_chat.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="568">
-          <caret line="685" column="1" lean-forward="true" selection-start-line="685" selection-start-column="1" selection-end-line="685" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/crm.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="16" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/plant_information/crm/crm.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="143" column="20" lean-forward="true" selection-start-line="143" selection-start-column="20" selection-end-line="143" selection-end-column="20" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/cogs_upload.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1173">
-          <caret line="69" column="52" lean-forward="true" selection-start-line="69" selection-start-column="52" selection-end-line="69" selection-end-column="52" />
+        <state relative-caret-position="952">
+          <caret line="56" column="1" selection-start-line="56" selection-start-column="1" selection-end-line="56" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/profit_lost.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2754">
+          <caret line="162" column="14" selection-start-line="162" selection-start-column="14" selection-end-line="162" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/plant_information/upload/cogs_upload.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="901">
+          <caret line="53" column="25" selection-start-line="53" selection-start-column="25" selection-end-line="53" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/sales_dashboard.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="22" lean-forward="true" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/plant_information/sales/sales_revenue_all.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../paradigma_dev/api/application/controllers/upload_control.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="20" lean-forward="true" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/plant_information/administrator_index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3174">
-          <caret line="421" column="69" lean-forward="true" selection-start-line="421" selection-start-column="69" selection-end-line="421" selection-end-column="69" />
+        <state relative-caret-position="-8184">
+          <caret line="23" column="16" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/finance_dashboard.php">
+    <entry file="file://$PROJECT_DIR$/application/controllers/json_control.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="29" column="107" lean-forward="true" selection-start-line="29" selection-start-column="107" selection-end-line="29" selection-end-column="107" />
+        <state relative-caret-position="289">
+          <caret line="17" column="61" selection-start-line="17" selection-start-column="61" selection-end-line="17" selection-end-column="61" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/plant_information/finance/income.php">
+    <entry file="file://$PROJECT_DIR$/assets/js/sales_revenue_all.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="196" column="30" lean-forward="true" selection-start-line="196" selection-start-column="30" selection-end-line="196" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/finance_dashboard.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="24" column="27" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/phpinfo.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="10" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/cogs.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1428">
-          <caret line="84" column="66" selection-start-line="84" selection-start-column="66" selection-end-line="84" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/plant_information/cogs/trend.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="42" column="32" selection-start-line="42" selection-start-column="32" selection-end-line="42" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/m_cogs.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="31" column="206" selection-start-line="31" selection-start-column="206" selection-end-line="31" selection-end-column="206" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/cogs.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="332" column="31" lean-forward="true" selection-start-line="332" selection-start-column="31" selection-end-line="332" selection-end-column="31" />
+        <state relative-caret-position="-551">
+          <caret line="567" column="24" selection-start-line="567" selection-start-column="24" selection-end-line="567" selection-end-column="24" />
           <folding>
-            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#0;n#tr#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#1;n#tr#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#0;n#tr#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#1;n#tr#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#0;n#tr#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#1;n#tr#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#tr#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#td#0;n#tr#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#!!top" expanded="true" />
+            <element signature="n#style#1;n#td#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -61,5 +61,11 @@ class finance_dashboard extends CI_Controller {
         $load['opco'] = $opco;
         $this->template->load('plant_information/administrator_index', 'plant_information/finance/procurement', $load); 
     }
+    function margin_report() {
+        $opco = $this->uri->segment(3);
+        $level = $this->session->userdata('level');
+        $load['opco'] = $opco;
+        $this->template->load('plant_information/administrator_index', 'plant_information/finance/margin_report', $load); 
+    }
     
 }

@@ -49,34 +49,39 @@ class sales_dashboard extends CI_Controller {
 		$this->template->load('plant_information/administrator_index', 'plant_information/sales/sales_trend', $load); 
     }
 	
-    function trend_volume_detail() {
+    function trend_volume_detail()
+    {
 		$opco = $this->uri->segment(3);
         $level = $this->session->userdata('level');
         $load['opco'] = $opco;
 		$this->template->load('plant_information/administrator_index', 'plant_information/sales/sales_trend_volume_detail', $load); 
     }
 
-    function trend_revenue() {
+    function trend_revenue()
+    {
         $level = $this->session->userdata('level');
         $load['Title'] = "Production Plant Tonasa";
 		$this->template->load('plant_information/administrator_index', 'plant_information/sales/sales_trend_revenue_all', $load); 
     }
 	
-    function trend_revenue_detail() {
+    function trend_revenue_detail()
+    {
 		$opco = $this->uri->segment(3);
         $level = $this->session->userdata('level');
         $load['opco'] = $opco;
 		$this->template->load('plant_information/administrator_index', 'plant_information/sales/sales_trend_revenue_detail', $load); 
     }
 	
-	function market_share() {
+    function market_share()
+    {
 		$opco = $this->uri->segment(3);
         $level = $this->session->userdata('level');
         $load['opco'] = $opco;
 		$this->template->load('plant_information/administrator_index', 'plant_information/sales/sales_market_share', $load); 
     }
 
-    function trend_harga() {
+    function trend_harga()
+    {
         $opco = $this->uri->segment(3);
         $level = $this->session->userdata('level');
         $load['opco'] = $opco;

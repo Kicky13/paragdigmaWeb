@@ -7,7 +7,7 @@ class mprocurement extends CI_Model {
     }
 
     public function get_total_pr($seldate, $comp){
-        $plant = substr($comp, 0, 1);
+        $plant = substr($comp,0, 1);
         $sql = "SELECT Count(*) As total_pr, SUM(PREIS) AS total_value FROM TB_EBAN_TRACKING WHERE WERKS LIKE '$plant%' AND BADAT LIKE '$seldate%'";
         $result = $this->db->query($sql);
         return $result->row();

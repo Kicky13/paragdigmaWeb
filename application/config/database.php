@@ -86,21 +86,21 @@ $db['forca_pos']['autoinit'] = TRUE;
 $db['forca_pos']['stricton'] = FALSE;
 
 
-$db['default']['hostname'] = 'localhost';
-$db['default']['username'] = '';
-$db['default']['password'] = '';
-$db['default']['database'] = '';
-$db['default']['dbdriver'] = 'mysql';
-$db['default']['dbprefix'] = '';
-$db['default']['pconnect'] = TRUE;
-$db['default']['db_debug'] = TRUE;
-$db['default']['cache_on'] = FALSE;
-$db['default']['cachedir'] = '';
-$db['default']['char_set'] = 'utf8';
-$db['default']['dbcollat'] = 'utf8_general_ci';
-$db['default']['swap_pre'] = '';
-$db['default']['autoinit'] = TRUE;
-$db['default']['stricton'] = FALSE;
+// $db['default']['hostname'] = 'localhost';
+// $db['default']['username'] = '';
+// $db['default']['password'] = '';
+// $db['default']['database'] = '';
+// $db['default']['dbdriver'] = 'mysql';
+// $db['default']['dbprefix'] = '';
+// $db['default']['pconnect'] = TRUE;
+// $db['default']['db_debug'] = TRUE;
+// $db['default']['cache_on'] = FALSE;
+// $db['default']['cachedir'] = '';
+// $db['default']['char_set'] = 'utf8';
+// $db['default']['dbcollat'] = 'utf8_general_ci';
+// $db['default']['swap_pre'] = '';
+// $db['default']['autoinit'] = TRUE;
+// $db['default']['stricton'] = FALSE;
 
 $db['psqlsatu']['hostname'] = '10.15.3.63';
 $db['psqlsatu']['username'] = 'pis';
@@ -280,7 +280,7 @@ $db['orapdo']['stricton'] = FALSE;
 /**
  * NEW DEVSD
  */
-$active_group = 'devsi';
+//$active_group = 'devsi';
 $db['devsi'] = array(
     'dsn' => '',
     'hostname' => '(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=10.15.3.144)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=pdbsi)))',
@@ -304,7 +304,7 @@ $db['devsi'] = array(
     'save_queries' => TRUE
 );
 
-$active_group = 'devsd';
+//$active_group = 'devsd';
 $query_builder = TRUE;
 $db['devsd'] = array(
     'dsn' => '',
@@ -367,6 +367,7 @@ $db['sggbi']['dbcollat'] = 'utf8_general_ci';
 $db['sggbi']['swap_pre'] = '';
 $db['sggbi']['autoinit'] = TRUE;
 $db['sggbi']['stricton'] = FALSE;
+
 
 
 

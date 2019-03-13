@@ -3,9 +3,7 @@
 		<div class="col-md-12 nopadding" style="background:#F8F8F8;padding-top: 6px">
 			
 			<div class="col-md-12 nopadding col-xs-12" style="padding: 0 20px 10px 20px;">
-				<div class="col-md-2 nopadding col-xs-12">
-					<span class="tittle_head" id="tittle_head">PR</span>
-				</div>
+				<div class="col-md-2 nopadding col-xs-12"></div>
 				<div class="col-md-7 nopadding col-xs-12 finddata" align="center">
 					<!-- Type
 						<select id="opco" class="opco highlight_option chooseType">
@@ -46,23 +44,22 @@
 							<option value="2016">2016</option>
 							<option value="2017">2017</option>
 							<option value="2018">2018</option>
+							<option value="2019">2019</option>
 						</select>&nbsp;&nbsp;&nbsp;
 					<a class="highlight_option find" style="display: inline-block; margin-top: 8px; width: 60px;">
 						<span>Find</span>
 					</a>
 				</div>
-				<div class="col-md-3 nopadding col-xs-12 choosedata" align="right" style="padding-top: 10px">					
-					
-				</div>
+				<div class="col-md-3 nopadding col-xs-12 choosedata" align="right" style="padding-top: 10px"></div>
 			</div>
 			
 			<div class="col-md-12 nopadding col-5 scroll-block" style="padding: 10px 15px 12px 10px;">
 				<div class="col-md-2 padding-left col-xs-12">
 	                <div class="col-xs-12 highlight block active nopadding" data-name="PR" rel="1" style="padding: 0; overflow: hidden;">
-	                    <div class="inc" style="padding: 12px 10px 10px">
-	                    	<h1 class="bottom_header">Purchase Requestion</h1>
-	                    </div>
-	                    <div class="col-xs-12 nopadding growth" align="left" style="font-size: 14px; margin-top: 42px">
+	                    <div class="col-xs-12 nopadding growth" align="left" style="font-size: 14px;">
+	                    	<div class="inc" style="padding: 12px 10px 10px">
+	                    		<h1>Purchase Requestion</h1>
+	                    	</div>
 	                    	<div class="col-xs-6 nopadding valproc" align="center" style="padding: 10px">Count<br><b class="count count1">0</b></div>
 	                    	<div class="col-xs-6 nopadding valproc" align="center" style="padding: 10px;">Total Value<br><b class="count tvalue1">0</b></div>
 	                    </div>
@@ -71,11 +68,10 @@
 				</div>
 				<div class="col-md-2 padding-left col-xs-12">
 	                <div class="col-xs-12 highlight block" data-name="PR-Rel" rel="2" style="padding: 0; overflow: hidden;">
-	                    <div class="inc" style="padding: 12px 10px 10px">
-	                    	<h1 class="bottom_header">PR Release</h1>
-	                    </div>
-	                    
-	                    <div class="col-xs-12 nopadding growth" align="left" style="font-size: 14px; margin-top: 42px">
+	                    <div class="col-xs-12 nopadding growth" align="left" style="font-size: 14px;">
+	                    	<div class="inc" style="padding: 12px 10px 10px">
+	                    		<h1>PR Release</h1>
+	                    	</div>
 	                    	<div class="col-xs-6 nopadding valproc" align="center" style="padding: 10px">Count<br><b class="count count2">0</b></div>
 	                    	<div class="col-xs-6 nopadding valproc" align="center" style="padding: 10px;">Total Value<br><b class="count tvalue2">0</b></div>
 	                    </div>
@@ -83,11 +79,12 @@
 				</div>
 				<div class="col-md-2 padding-left col-xs-12">
 	                <div class="col-xs-12 highlight block" data-name="RFQ" rel="3" style="padding: 0; overflow: hidden;">
-	                   <div class="inc" style="padding: 12px 10px 10px">
-	                    	<h1 class="bottom_header">Request For Quotation</h1>
-	                    </div>
+	                   
 	                    
-	                    <div class="col-xs-12 nopadding growth" align="left" style="font-size: 14px; margin-top: 42px">
+	                    <div class="col-xs-12 nopadding growth" align="left" style="font-size: 14px;">
+	                    	<div class="inc" style="padding: 12px 10px 10px">
+	                    		<h1>Request For Quotation</h1>
+	                    	</div>
 	                    	<div class="col-xs-6 nopadding valproc" align="center" style="padding: 10px">Count<br><b class="count count3">0</b></div>
 	                    	<div class="col-xs-6 nopadding valproc" align="center" style="padding: 10px;">Total Value<br><b class="count tvalue3">0</b></div>
 	                    </div>
@@ -95,11 +92,11 @@
 				</div>
 				<div class="col-md-2 padding-left col-xs-12">
 	                <div class="col-xs-12 highlight block" data-name="PO" rel="4" style="padding: 0; overflow: hidden;">
-	                    <div class="inc" style="padding: 12px 10px 10px">
-	                    	<h1 class="bottom_header">Purchase Order</h1>
-	                    </div>
 	                    
-	                    <div class="col-xs-12 nopadding growth" align="left" style="font-size: 14px; margin-top: 42px">
+	                    <div class="col-xs-12 nopadding growth" align="left" style="font-size: 14px;">
+	                    	<div class="inc" style="padding: 12px 10px 10px">
+	                    		<h1>Purchase Order</h1>
+	                    	</div>
 	                    	<div class="col-xs-6 nopadding valproc" align="center" style="padding: 10px">Count<br><b class="count count4">0</b></div>
 	                    	<div class="col-xs-6 nopadding valproc" align="center" style="padding: 10px;">Total Value<br><b class="count tvalue4">0</b></div>
 	                    </div>
@@ -107,40 +104,63 @@
 				</div>
 				<div class="col-md-2 padding-left col-xs-12">
 	                <div class="col-xs-12 highlight block" data-name="GR" rel="5" style="padding: 0; overflow: hidden;">
-	                    <div class="inc" style="padding: 12px 10px 10px">
-	                    	<h1 class="bottom_header">Goods Receipt</h1>
-	                    </div>
 	                    
-	                    <div class="col-xs-12 nopadding growth" align="left" style="font-size: 14px; margin-top: 42px">
+	                    <div class="col-xs-12 nopadding growth" align="left" style="font-size: 14px;">
+	                    	<div class="inc" style="padding: 12px 10px 10px">
+	                    		<h1>Goods Receipt</h1>
+	                    	</div>
 	                    	<div class="col-xs-6 nopadding valproc" align="center" style="padding: 10px">Count<br><b class="count count5">0</b></div>
 	                    	<div class="col-xs-6 nopadding valproc" align="center" style="padding: 10px;">Total Value<br><b class="count tvalue5">0</b></div>
 	                    </div>
 	                </div>
 				</div>
 			</div>
-			<div class="col-md-12 nopadding col-xs-12" style="margin-top: 32px; padding: 0 20px 12px 20px;">
+			<div class="col-md-12 nopadding col-xs-12" style="padding: 0 20px 12px 20px;">
+				<div class="col-md-6 nopadding col-xs-12">
+					<span class="tittle_head" id="tittle_head">PR</span>
+				</div>
 
-				<div class="col-md-6 nopadding col-xs-12 RSS" align="left">
+				<div class="col-md-6 nopadding col-xs-12 RSS" align="right">
 					<div class="col-xs-4 nopadding" align="center" style="padding-right: 8px;">
-						<span style="font-size: 18px;">Raw Material & Fuel</span><br>
-						<span class="countt countRMF"> 0</span><br>
-						<span class="totvalue valRMF"> 0</span>&nbsp;
+						<div class="col-xs-12 nopadding" align="center" style="font-size: 14px;">
+		                    <div class="inc col-xs-12 nopadding" style="padding: 0 4px 4px">
+		                    	<h1>Raw Material & Fuel</h1>
+		                    </div>
+		                    <div class="col-xs-12 nopadding" align="center">
+		                    	<div class="col-xs-6 nopadding valproc" align="center" style="padding: 4px">Count<br><b class="countt countRMF">0</b></div>
+		                    <div class="col-xs-6 nopadding valproc" align="center" style="padding: 4px;">Total Value<br><b class="totvalue valRMF">0</b></div>
+		                    </div>
+		                </div>
 					</div>
-					<div class="col-xs-4 nopadding" align="center">
-						<span style="font-size: 18px">Spareparts</span><br>
-						<span class="countt countSpareparts"> 0</span><br>
-						<span class="totvalue valSpareparts"> 0</span>&nbsp;
+
+					<div class="col-xs-4 nopadding" align="center" style="padding-right: 8px;">
+						<div class="col-xs-12 nopadding" align="center" style="font-size: 14px;">
+		                    <div class="inc col-xs-12 nopadding" style="padding: 0 4px 4px">
+		                    	<h1>Sparepart</h1>
+		                    </div>
+		                    <div class="col-xs-12 nopadding" align="center">
+		                    	<div class="col-xs-6 nopadding valproc" align="center" style="padding: 4px">Count<br><b class="countt countSpareparts">0</b></div>
+		                    <div class="col-xs-6 nopadding valproc" align="center" style="padding: 4px;">Total Value<br><b class="totvalue valSpareparts">0</b></div>
+		                    </div>
+		                </div>
 					</div>
-					<div class="col-xs-4 nopadding" align="center">
-						<span style="font-size: 18px">Services</span><br>
-						<span class="countt countServices"> 0</span><br>
-						<span class="totvalue valServices"> 0</span>&nbsp;
+
+					<div class="col-xs-4 nopadding" align="center" style="padding-right: 8px;">
+						<div class="col-xs-12 nopadding" align="center" style="font-size: 14px;">
+		                    <div class="inc col-xs-12 nopadding" style="padding: 0 4px 4px">
+		                    	<h1>Services</h1>
+		                    </div>
+		                    <div class="col-xs-12 nopadding" align="center">
+		                    	<div class="col-xs-6 nopadding valproc" align="center" style="padding: 4px">Count<br><b class="countt countServices">0</b></div>
+		                    <div class="col-xs-6 nopadding valproc" align="center" style="padding: 4px;">Total Value<br><b class="totvalue valServices">0</b></div>
+		                    </div>
+		                </div>
 					</div>
 				</div>
 			</div>
 
 			<div class="col-md-12 nopadding col-xs-12" style="padding: 0 20px 12px 20px;">
-				<div class="chart" id="tracking" style="min-height: 500px; width: 100%">
+				<div class="chart" id="tracking" style="min-height: 350px; width: 100%">
 				</div>
 			</div>
 
