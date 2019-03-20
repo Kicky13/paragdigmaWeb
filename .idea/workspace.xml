@@ -2,33 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b25838e5-215a-4244-8956-1b74fa9bc6f0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/config/database.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/cogs_upload.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/cogs_upload.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/finance_dashboard.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/finance_dashboard.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/sales_dashboard.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/sales_dashboard.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/models/mfinance_report.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/models/mfinance_report.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/models/mprocurement.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/models/mprocurement.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/plant_information/administrator_index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/plant_information/administrator_index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/plant_information/cogs/trend.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/plant_information/cogs/trend.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/plant_information/finance/income.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/plant_information/finance/income.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/plant_information/finance/income_statement.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/plant_information/finance/income_statement.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/plant_information/finance/operation_expense.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/plant_information/finance/operation_expense.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/plant_information/material_management/procurement.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/plant_information/material_management/procurement.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/plant_information/material_management/report.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/plant_information/material_management/report.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/plant_information/sales/sales_revenue_all.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/plant_information/sales/sales_revenue_all.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/plant_information/sales/sales_revenue_detail.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/plant_information/sales/sales_revenue_detail.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/plant_information/sales/sales_volume_all.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/plant_information/sales/sales_volume_all.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/plant_information/sales/sales_volume_detail.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/plant_information/sales/sales_volume_detail.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/plant_information/treasury/cashposition.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/plant_information/treasury/cashposition.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/plant_information/treasury/exchangerate.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/plant_information/treasury/exchangerate.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/cogs/COGS_19Okt18_1.xls" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cogs/COGS_19Okt18_1.xls" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/slide.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/slide.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/cogs.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/cogs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/sales_revenue_all.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/sales_revenue_all.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maps/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/maps/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/finance_dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/finance_dashboard.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -75,36 +50,39 @@
     <session id="-1266200674">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.28" value="1" />
           <entry key="project.open.time.32" value="1" />
-          <entry key="project.open.time.35" value="1" />
+          <entry key="project.open.time.35" value="2" />
+          <entry key="project.open.time.37" value="1" />
           <entry key="project.open.time.38" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.opened" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="js" value="1" />
           <entry key="json" value="1" />
-          <entry key="php" value="7" />
+          <entry key="php" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="JSON" value="1" />
           <entry key="JavaScript" value="1" />
-          <entry key="PHP" value="7" />
+          <entry key="PHP" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="js" value="1223" />
+          <entry key="js" value="1224" />
           <entry key="php" value="190" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JavaScript" value="1223" />
+          <entry key="JavaScript" value="1224" />
           <entry key="PHP" value="190" />
         </counts>
       </usages-collector>
@@ -112,79 +90,30 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/controllers/cogs_upload.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="952">
-              <caret line="56" column="1" selection-start-line="56" selection-start-column="1" selection-end-line="56" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/controllers/profit_lost.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2754">
-              <caret line="162" column="14" selection-start-line="162" selection-start-column="14" selection-end-line="162" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/views/plant_information/upload/cogs_upload.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="901">
-              <caret line="53" column="25" selection-start-line="53" selection-start-column="25" selection-end-line="53" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/controllers/sales_dashboard.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="22" lean-forward="true" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/views/plant_information/sales/sales_revenue_all.php">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/assets/js/sales_revenue_all.js">
+        <entry file="file://$PROJECT_DIR$/assets/js/finance_dashboard.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-551">
-              <caret line="567" column="24" selection-start-line="567" selection-start-column="24" selection-end-line="567" selection-end-column="24" />
+            <state relative-caret-position="289">
+              <caret line="17" column="6" lean-forward="true" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
               <folding>
-                <element signature="n#style#0;n#tr#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#td#0;n#tr#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#td#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#td#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#td#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#td#0;n#!!top" expanded="true" />
-                <element signature="n#style#1;n#td#0;n#!!top" expanded="true" />
+                <element signature="n#!!doc" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/controllers/json_control.php">
+        <entry file="file://$PROJECT_DIR$/application/controllers/Finance_report.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="61" selection-start-line="17" selection-start-column="61" selection-end-line="17" selection-end-column="61" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../paradigma_dev/api/application/controllers/upload_control.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="20" lean-forward="true" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
+            <state relative-caret-position="-167">
+              <caret line="620" column="25" selection-start-line="620" selection-start-column="20" selection-end-line="620" selection-end-column="25" />
+              <folding>
+                <element signature="e#8#14#0" expanded="true" />
+                <element signature="e#8#14#0" expanded="true" />
+                <element signature="e#8#14#0" expanded="true" />
+                <element signature="e#8#14#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -196,6 +125,9 @@
       <find>$file</find>
       <find>DailyChart</find>
       <find>tableProv</find>
+      <find>show</find>
+      <find>Finance</find>
+      <find>show(</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -210,6 +142,7 @@
         <option value="$PROJECT_DIR$/application/views/plant_information/upload/cogs_upload.php" />
         <option value="$PROJECT_DIR$/assets/js/sales_revenue_all.js" />
         <option value="$PROJECT_DIR$/application/controllers/json_control.php" />
+        <option value="$PROJECT_DIR$/assets/js/finance_dashboard.js" />
       </list>
     </option>
   </component>
@@ -244,6 +177,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -262,11 +196,31 @@
               <item name="application" type="462c0819:PsiDirectoryNode" />
               <item name="controllers" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="dashboardBOD" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dashboardBOD" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dashboardBOD" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dashboardBOD" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="plant_information" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dashboardBOD" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dashboardBOD" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="plant_information" type="462c0819:PsiDirectoryNode" />
+              <item name="finance" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -305,17 +259,20 @@
       <workItem from="1551681837594" duration="4002000" />
       <workItem from="1551748042075" duration="6753000" />
       <workItem from="1552266862325" duration="5667000" />
+      <workItem from="1552439170529" duration="3244000" />
+      <workItem from="1552874120968" duration="1793000" />
+      <workItem from="1553044185916" duration="2582000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45189000" />
+    <option name="totallyTimeSpent" value="52808000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28895614" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30257186" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -328,7 +285,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.3295082" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.3276923" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -387,10 +344,10 @@
     <entry file="file://$PROJECT_DIR$/jsonFile/SalesDaily_2019-02-14.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/cogs_upload.php">
+    <entry file="file://$PROJECT_DIR$/application/views/plant_information/administrator_index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="952">
-          <caret line="56" column="1" selection-start-line="56" selection-start-column="1" selection-end-line="56" selection-end-column="1" />
+        <state relative-caret-position="-8184">
+          <caret line="23" column="16" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -408,49 +365,70 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../paradigma_dev/api/application/controllers/upload_control.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="20" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/cogs_upload.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="952">
+          <caret line="56" column="1" selection-start-line="56" selection-start-column="1" selection-end-line="56" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/sales_dashboard.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
-          <caret line="11" column="22" lean-forward="true" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/sales_revenue_all.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3043">
+          <caret line="179" column="10" selection-start-line="179" selection-start-column="10" selection-end-line="179" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/finance_dashboard.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/plant_information/finance/income.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/json_control.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/plant_information/sales/sales_revenue_all.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/../paradigma_dev/api/application/controllers/upload_control.php">
+    <entry file="file://$PROJECT_DIR$/application/controllers/Finance_report.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="20" lean-forward="true" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
+        <state relative-caret-position="-167">
+          <caret line="620" column="25" selection-start-line="620" selection-start-column="20" selection-end-line="620" selection-end-column="25" />
+          <folding>
+            <element signature="e#8#14#0" expanded="true" />
+            <element signature="e#8#14#0" expanded="true" />
+            <element signature="e#8#14#0" expanded="true" />
+            <element signature="e#8#14#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/plant_information/administrator_index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8184">
-          <caret line="23" column="16" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/json_control.php">
+    <entry file="file://$PROJECT_DIR$/assets/js/finance_dashboard.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
-          <caret line="17" column="61" selection-start-line="17" selection-start-column="61" selection-end-line="17" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/sales_revenue_all.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-551">
-          <caret line="567" column="24" selection-start-line="567" selection-start-column="24" selection-end-line="567" selection-end-column="24" />
+          <caret line="17" column="6" lean-forward="true" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
           <folding>
-            <element signature="n#style#0;n#tr#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#td#0;n#tr#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#0;n#!!top" expanded="true" />
-            <element signature="n#style#1;n#td#0;n#!!top" expanded="true" />
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

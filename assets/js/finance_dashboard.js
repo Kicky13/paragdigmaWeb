@@ -2,8 +2,8 @@
 // Per Ton => Revenue = 7, Cost of Revenue = 8+9, Operation Expanse = 10, EBITDA = 11, Net Profit = 12
 
 $(document).ready(function(){
-	var base_url = "http://10.15.5.150/dev/DashboardBOD/";
-	// var base_url = "http://eis.semenindonesia.com/";
+	// var base_url = "http://10.15.5.150/dev/DashboardBOD/";
+	var base_url = "http://eis.semenindonesia.com/";
 
 	var datas = [];
 	var type = false;
